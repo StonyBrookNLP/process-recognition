@@ -1,7 +1,7 @@
 import requests
 import json
 
-def getList(sen):
+def get_list(sen):
 	"""
 	Converts the sentence into a List such that it can be used as an POST request json blob data.
 
@@ -19,7 +19,7 @@ def getList(sen):
 	    res.append(l)
 	return res
 
-def getTextualEntailment(t, h):
+def get_textual_entailment(t, h):
 	"""
 	Returns the output of POST request to AI2 textual entailment service
 
