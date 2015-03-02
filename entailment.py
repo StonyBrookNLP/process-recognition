@@ -19,7 +19,7 @@ def get_list(sen):
 	    res.append(l)
 	return res
 
-def get_textual_entailment(t, h):
+def get_ai2_textual_entailment(t, h):
 	"""
 	Returns the output of POST request to AI2 textual entailment service
 
@@ -40,7 +40,7 @@ def get_textual_entailment(t, h):
 
 	req = requests.post(url, headers=headers, data=json.dumps(data))
 
-	return req.text
+	return req.json()
 
 def main():
 
