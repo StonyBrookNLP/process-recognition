@@ -29,8 +29,8 @@ def get_ai2_textual_entailment(t, h):
 	Returns:
 		req : A text version of json response.
 	"""
-	text = getList(t)
-	hypothesis = getList(h)
+	text = get_list(t)
+	hypothesis = get_list(h)
 
 	data = { "text" : text, "hypothesis": hypothesis}
 
@@ -49,7 +49,7 @@ def main():
 
 	print "Response: "
 
-	print getTextualEntailment(text, hypothesis)
+	print get_ai2_textual_entailment(text, hypothesis)
 
 
 if __name__ == "__main__":
