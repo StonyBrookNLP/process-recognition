@@ -49,14 +49,21 @@ def read_tsv(filename):
 
 
 def get_processes(reader):
-    processes = set()
-    for row in reader:
-        processes.add(row[PROCESS])
-    processes = [process.lower() for process in processes]
+    """Returns all the processes in the process_frames.tsv file."""
+    processes = set(map(lambda row: row[PROCESS].lower(), reader))
     return processes
 
 
 def get_question_frame(question, question_frames):
+    """Question frame extractor.
+
+    Args:
+        question: A string representing the question without options.
+        question_frames: Contents of question_frames.tsv file.
+
+    Returns: A python dictionary q_frame for the question with
+        frame elements extracted from question_frames.
+    """
     q_frame = dict()
     for row in question_frames:
         if row[QUESTION] == question:
@@ -68,6 +75,16 @@ def get_question_frame(question, question_frames):
 
 
 def get_answer_frames(answer, process_db):
+    """Answer frame extractor.
+
+    Args:
+        answer: A string representing the answer choice.
+        process_db: Contents of process_frames.tsv file.
+
+    Returns: a answer_frames (a list) of python dictionaries,
+        containing frames for the answer with frame elements
+        extracted from process_db.
+    """
     wnl = WordNetLemmatizer()
     answer_frames = list()
     for row in process_db:
@@ -82,6 +99,16 @@ def get_answer_frames(answer, process_db):
 
 
 def ranker(question_frame, answer_choices, process_db):
+    """Ranks the answer_choices by calling aligner.
+
+    Args:
+        question_frame: A python dictionary containg question frame elements.
+        answer_choices: A python list containing answer choices.
+        process_db:  Contents of process_frames.tsv file.
+
+    Returns: A ranked list of tuples containing answer choices and their
+        scores.
+    """
     answer_scores = dict()
     for answer in answer_choices:
         answer_frames = get_answer_frames(answer, process_db)
@@ -93,6 +120,17 @@ def ranker(question_frame, answer_choices, process_db):
 
 
 def aligner(question_frame, answer_frames):
+    """Aligns a question frame with a answer frame and calls entailment service
+    to get a match score.
+
+    Args:
+        question_frame: A python dictionary containg question frame elements.
+        answer_frames: A list of python dictionaries containg answer frame
+            elements.
+
+    Returns: A number representing the match score of question frame with all
+        the answer frames.
+    """
     answer_scores = []
     for answer_frame in answer_frames:
         frame_scores = dict()
@@ -107,8 +145,8 @@ def aligner(question_frame, answer_frames):
             frame_scores[frame_element] = (q_element, a_element, score)
         answer_scores.append(frame_scores)
     answer_score = list()
-    for f_s in answer_scores:
-        answer_score.append(sum(map(lambda x: x[2], f_s.values())))
+    for frame_score in answer_scores:
+        answer_score.append(sum(map(lambda x: x[2], frame_score.values())))
     score = np.sum(filter(lambda x: x > 0.0, answer_score))
     return score
 
@@ -119,13 +157,10 @@ def main():
     _, question_frames = read_tsv('question_frames.tsv')
 
     fh = open("output.tsv", "wt")
-
     row_string = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n"
-
     header = row_string.format("QUESTION", "OPTION_A", "OPTION_B", "OPTION_C",
                                "OPTION_D", "CORRECT_ANSWER",
                                "PREDICTED_ANSWER", "SCORES")
-
     fh.write(header)
 
     for num, row in enumerate(questions):
@@ -145,7 +180,7 @@ def main():
 
         fh.write(out_row)
     fh.close()
-    print "done."
+    print "Done!"
 
 
 if __name__ == '__main__':
