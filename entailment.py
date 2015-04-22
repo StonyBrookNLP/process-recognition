@@ -20,35 +20,35 @@ def get_list(sen):
 	return res
 
 def get_ai2_textual_entailment(t, h):
-	"""
-	Returns the output of POST request to AI2 textual entailment service
+    """
+    Returns the output of POST request to AI2 textual entailment service
 
     Args:t, h : text and hypothesis (two strings)
 
     Returns:req : A text version of json response.
-	"""
-	text = get_list(t)
-	hypothesis = get_list(h)
+    """
+    text = get_list(t)
+    hypothesis = get_list(h)
 
-	data = { "text" : text, "hypothesis": hypothesis}
+    data = { "text" : text, "hypothesis": hypothesis}
 
-	headers = {'Content-type': 'application/json', 'Accept': 'application/json'}
+    headers = {'Content-type': 'application/json', 'Accept': 'application/json'}
 
-	# url = 'http://entailment.prod.allenai.org:8191/api/entails'
+    # url = 'http://entailment.prod.allenai.org:8191/api/entails'
     url = 'http://localhost:8191/api/entails'
 
-	req = requests.post(url, headers=headers, data=json.dumps(data))
+    req = requests.post(url, headers=headers, data=json.dumps(data))
 
-	return req.json()
+    return req.json()
 
 def main():
 
-	text = raw_input("Enter the text: ")
-	hypothesis = raw_input("Enter the hypothesis: ")
+    text = raw_input("Enter the text: ")
+    hypothesis = raw_input("Enter the hypothesis: ")
 
-	print "Response: "
+    print "Response: "
 
-	print get_ai2_textual_entailment(text, hypothesis)
+    print get_ai2_textual_entailment(text, hypothesis)
 
 
 if __name__ == "__main__":
