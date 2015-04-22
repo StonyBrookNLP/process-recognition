@@ -167,6 +167,7 @@ def aligner(question_frames, answer_frames):
             for frame_element in FRAME_ELEMENTS:
                 q_element = question_frame[frame_element]
                 a_element = answer_frame[frame_element]
+                print a_element, q_element
                 ret = entailment.get_ai2_textual_entailment(
                     a_element, q_element)
                 if ret['confidence'] is None:
