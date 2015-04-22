@@ -34,9 +34,9 @@ def get_ai2_textual_entailment(t, h):
 
 	data = { "text" : text, "hypothesis": hypothesis}
 
-	headers = {'Content-type': 'application/json', 'Accept': 'application/json'}
+    headers = {'Content-type': 'application/json', 'Accept': 'application/json'}
 
-	# url = 'http://entailment.prod.allenai.org:8191/api/entails'
+    # url = 'http://entailment.prod.allenai.org:8191/api/entails'
     url = 'http://localhost:8191/api/entails'
 
 	req = requests.post(url, headers=headers, data=json.dumps(data))
