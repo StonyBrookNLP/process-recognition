@@ -10,14 +10,14 @@ def get_list(sen):
 
     Returns:
         res: a list of list containg words and tags.
-        """
-        res = list()
-        count = 0
-        for word in sen.split():
-            l = [word, "Any", count]
-            count += 1
-            res.append(l)
-            return res
+    """
+    res = list()
+    count = 0
+    for word in sen.split():
+        l = [word, "Any", count]
+        count += 1
+        res.append(l)
+        return res
 
 def get_ai2_textual_entailment(t, h):
     """
