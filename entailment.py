@@ -29,12 +29,14 @@ def get_ai2_textual_entailment(t, h):
 	Returns:
 		req : A text version of json response.
 	"""
-    text = get_list(t)
-    hypothesis = get_list(h)
-    data = { "text" : text, "hypothesis": hypothesis}
-    headers = {'Content-type': 'application/json', 'Accept': 'application/json'}
+	text = get_list(t)
+	hypothesis = get_list(h)
 
-    # url = 'http://entailment.prod.allenai.org:8191/api/entails'
+	data = { "text" : text, "hypothesis": hypothesis}
+
+	headers = {'Content-type': 'application/json', 'Accept': 'application/json'}
+
+	# url = 'http://entailment.prod.allenai.org:8191/api/entails'
     url = 'http://localhost:8191/api/entails'
 
 	req = requests.post(url, headers=headers, data=json.dumps(data))
