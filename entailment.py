@@ -23,9 +23,11 @@ def get_ai2_textual_entailment(t, h):
     """
     Returns the output of POST request to AI2 textual entailment service
 
-    Args:t, h : text and hypothesis (two strings)
+    Args:
+        t, h : text and hypothesis (two strings)
 
-    Returns:req : A text version of json response.
+    Returns:
+        req : A text version of json response.
     """
     text = get_list(t)
     hypothesis = get_list(h)
