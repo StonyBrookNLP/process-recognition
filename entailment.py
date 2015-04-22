@@ -2,22 +2,22 @@ import requests
 import json
 
 def get_list(sen):
-	"""
-	Converts the sentence into a List such that it can be used as an POST request json blob data.
+    """
+    Converts the sentence into a List such that it can be used as an POST request json blob data.
 
-	Args:
-		sen : a string
+    Args:
+        sen : a string
 
-	Returns:
-		res: a list of list containg words and tags.
-	"""
-	res = list()
-	count = 0
-	for word in sen.split():
-	    l = [word, "Any", count]
-	    count += 1
-	    res.append(l)
-	return res
+    Returns:
+        res: a list of list containg words and tags.
+        """
+        res = list()
+        count = 0
+        for word in sen.split():
+            l = [word, "Any", count]
+            count += 1
+            res.append(l)
+            return res
 
 def get_ai2_textual_entailment(t, h):
     """
@@ -52,4 +52,4 @@ def main():
 
 
 if __name__ == "__main__":
-	main()
+    main()
