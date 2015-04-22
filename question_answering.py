@@ -2,19 +2,31 @@ from nltk.stem.wordnet import WordNetLemmatizer
 import entailment
 
 import csv
+import logging
 import numpy as np
 import operator
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Log file handler
+handler = logging.FileHandler('qa.log')
+handler.setLevel(logging.INFO)
+
+# Logging format
+formatter = logging.Formatter('%(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
 # To access process_frames read from 'process_frames.tsv' and
 # 'question_frames.tsv'
 PROCESS = 0
 UNDERGOER = 1
-CAUSE = 2
-MANNER = 3
+ENABLER = 2
+TRIGGER = 3
 RESULT = 4
-SOURCE = 5
-DEFINITIONS = 6
-FRAME_ELEMENTS = [UNDERGOER, CAUSE, MANNER, RESULT]
+UNDERSPECIFIED = 5
+FRAME_ELEMENTS = [UNDERGOER, ENABLER, TRIGGER, RESULT, UNDERSPECIFIED]
 
 # To access questions read from 'questions.tsv' and 'question_frames.tsv'
 QUESTION = 0
@@ -50,11 +62,19 @@ def read_tsv(filename):
 
 def get_processes(reader):
     """Returns all the processes in the process_frames.tsv file."""
-    processes = set(map(lambda row: row[PROCESS].lower(), reader))
+    processes = set()
+    for row in reader:
+        processes.add(row[PROCESS])
+    processes = [process.lower() for process in processes]
     return processes
 
 
-def get_question_frame(question, question_frames):
+def clean_string(entry):
+    wnl = WordNetLemmatizer()
+    return wnl.lemmatize(entry.strip().lower())
+
+
+def get_question_frames(question, question_frames):
     """Question frame extractor.
 
     Args:
@@ -64,14 +84,19 @@ def get_question_frame(question, question_frames):
     Returns: A python dictionary q_frame for the question with
         frame elements extracted from question_frames.
     """
-    q_frame = dict()
+    q_sentences = set(question.strip().split('.'))
+    q_sentences.add(question.strip())
+    q_frames = list()
     for row in question_frames:
-        if row[QUESTION] == question:
+        q_frame = dict()
+        if any(row[QUESTION].strip() in q for q in q_sentences):
             q_frame[UNDERGOER] = row[UNDERGOER]
-            q_frame[CAUSE] = row[CAUSE]
-            q_frame[MANNER] = row[MANNER]
+            q_frame[ENABLER] = row[ENABLER]
+            q_frame[TRIGGER] = row[TRIGGER]
             q_frame[RESULT] = row[RESULT]
-    return q_frame
+            q_frame[UNDERSPECIFIED] = row[UNDERSPECIFIED]
+            q_frames.append(q_frame)
+    return q_frames
 
 
 def get_answer_frames(answer, process_db):
@@ -91,18 +116,19 @@ def get_answer_frames(answer, process_db):
         answer_frame = dict()
         if wnl.lemmatize(answer) in row[PROCESS].lower():
             answer_frame[UNDERGOER] = row[UNDERGOER]
-            answer_frame[CAUSE] = row[CAUSE]
-            answer_frame[MANNER] = row[MANNER]
+            answer_frame[ENABLER] = row[ENABLER]
+            answer_frame[TRIGGER] = row[TRIGGER]
             answer_frame[RESULT] = row[RESULT]
+            answer_frame[UNDERSPECIFIED] = row[UNDERSPECIFIED]
             answer_frames.append(answer_frame)
     return answer_frames
 
 
-def ranker(question_frame, answer_choices, process_db):
+def ranker(question_frames, answer_choices, process_db):
     """Ranks the answer_choices by calling aligner.
 
     Args:
-        question_frame: A python dictionary containg question frame elements.
+        question_frames: A python list containing question frame elements.
         answer_choices: A python list containing answer choices.
         process_db:  Contents of process_frames.tsv file.
 
@@ -111,20 +137,23 @@ def ranker(question_frame, answer_choices, process_db):
     """
     answer_scores = dict()
     for answer in answer_choices:
+        logger.info("Answer: %s", answer)
         answer_frames = get_answer_frames(answer, process_db)
-        frame_score = aligner(question_frame, answer_frames)
+        frame_score = aligner(question_frames, answer_frames)
         answer_scores[answer] = frame_score
+        logger.info("----------\n")
     ranked_answers = sorted(answer_scores.items(), key=operator.itemgetter(1),
                             reverse=True)
     return ranked_answers
 
 
-def aligner(question_frame, answer_frames):
+def aligner(question_frames, answer_frames):
     """Aligns a question frame with a answer frame and calls entailment service
     to get a match score.
 
     Args:
-        question_frame: A python dictionary containg question frame elements.
+        question_frames: A list of python dictionaries containg question frame
+            elements.
         answer_frames: A list of python dictionaries containg answer frame
             elements.
 
@@ -132,22 +161,32 @@ def aligner(question_frame, answer_frames):
         the answer frames.
     """
     answer_scores = []
-    for answer_frame in answer_frames:
-        frame_scores = dict()
-        for frame_element in FRAME_ELEMENTS:
-            q_element = question_frame[frame_element]
-            a_element = answer_frame[frame_element]
-            ret = entailment.get_ai2_textual_entailment(a_element, q_element)
-            if ret['confidence'] is None:
-                score = 0
-            else:
-                score = ret['confidence']
-            frame_scores[frame_element] = (q_element, a_element, score)
-        answer_scores.append(frame_scores)
+    for question_frame in question_frames:
+        for answer_frame in answer_frames:
+            frame_scores = dict()
+            for frame_element in FRAME_ELEMENTS:
+                q_element = question_frame[frame_element]
+                a_element = answer_frame[frame_element]
+                ret = entailment.get_ai2_textual_entailment(
+                    a_element, q_element)
+                if ret['confidence'] is None:
+                    score = 0
+                else:
+                    score = ret['confidence']
+                frame_scores[frame_element] = (q_element, a_element, score)
+            answer_scores.append(frame_scores)
+    # logging loop
+    for a in answer_scores:
+        for k, v in a.iteritems():
+            logger.info("%s: %s", k, v)
+        logger.info("--")
     answer_score = list()
-    for frame_score in answer_scores:
-        answer_score.append(sum(map(lambda x: x[2], frame_score.values())))
-    score = np.sum(filter(lambda x: x > 0.0, answer_score))
+    for f_s in answer_scores:
+        answer_score.append(sum(map(lambda x: x[2], f_s.values())))
+    scores = filter(lambda x: x > 0.0, answer_score)
+    score = np.mean(scores) if (sum(scores) + len(scores)) > 0 else 0
+    logger.info("SCORES: %s", answer_score)
+    logger.info("MEAN:%s", score)
     return score
 
 
@@ -165,14 +204,25 @@ def main():
 
     for num, row in enumerate(questions):
         question = row[QUESTION]
-        q_frame = get_question_frame(question, question_frames)
+        q_frames = get_question_frames(question, question_frames)
         answer_choices = [row[OPTION_A], row[OPTION_B],
                           row[OPTION_C], row[OPTION_D]]
-        ranked_answers = ranker(q_frame, answer_choices, process_db)
+        logger.info("%s. %s", num + 1, question)
+        logger.info("A: %s", row[OPTION_A])
+        logger.info("B: %s", row[OPTION_B])
+        logger.info("C: %s", row[OPTION_C])
+        logger.info("D: %s\n\n", row[OPTION_D])
+        ranked_answers = ranker(q_frames, answer_choices, process_db)
         p_answer, confidence = ranked_answers[0]
         if confidence <= 0.0:
             p_answer = "Don't know :("
-
+            logger.info("Predicted Answer: Don't know")
+        else:
+            logger.info("Predicted Answer: %s with %s confidence", p_answer,
+                        confidence)
+        logger.info("Correct Answer: %s\n", row[ANS_MAP[row[ANSWER]]])
+        logger.info("Match Scores: %s\n\n", ranked_answers)
+        logger.info("=========================")
         out_row = row_string.format(question, row[OPTION_A], row[OPTION_B],
                                     row[OPTION_C], row[OPTION_D],
                                     row[ANS_MAP[row[ANSWER]]], p_answer,
