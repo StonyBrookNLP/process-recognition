@@ -29,8 +29,8 @@ def get_ai2_textual_entailment(t, h):
 	Returns:
 		req : A text version of json response.
 	"""
-	text = get_list(t)
-	hypothesis = get_list(h)
+    text = get_list(t)
+    hypothesis = get_list(h)
     data = { "text" : text, "hypothesis": hypothesis}
     headers = {'Content-type': 'application/json', 'Accept': 'application/json'}
 
