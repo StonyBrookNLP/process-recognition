@@ -208,7 +208,6 @@ def main():
         answer_choices = [row[OPTION_A], row[OPTION_B],
                           row[OPTION_C], row[OPTION_D]]
         print answer_choices
-        # result = filter(lambda x: x % 2, fib)
         valid_answer_choices = filter(bool, answer_choices)
         print valid_answer_choices
         logger.info("%s. %s", num + 1, question)
