@@ -207,9 +207,7 @@ def main():
         q_frames = get_question_frames(question, question_frames)
         answer_choices = [row[OPTION_A], row[OPTION_B],
                           row[OPTION_C], row[OPTION_D]]
-        print answer_choices
         valid_answer_choices = filter(bool, answer_choices)
-        print valid_answer_choices
         logger.info("%s. %s", num + 1, question)
         logger.info("A: %s", row[OPTION_A])
         logger.info("B: %s", row[OPTION_B])
