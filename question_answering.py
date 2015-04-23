@@ -1,7 +1,7 @@
 from nltk.stem.wordnet import WordNetLemmatizer
-import entailment
 
 import csv
+import entailment
 import logging
 import numpy as np
 import operator
@@ -61,7 +61,6 @@ def read_tsv(filename):
 
 
 def get_processes(reader):
-    """Returns all the processes in the process_frames.tsv file."""
     processes = set()
     for row in reader:
         processes.add(row[PROCESS])
@@ -75,15 +74,6 @@ def clean_string(entry):
 
 
 def get_question_frames(question, question_frames):
-    """Question frame extractor.
-
-    Args:
-        question: A string representing the question without options.
-        question_frames: Contents of question_frames.tsv file.
-
-    Returns: A python dictionary q_frame for the question with
-        frame elements extracted from question_frames.
-    """
     q_sentences = set(question.strip().split('.'))
     q_sentences.add(question.strip())
     q_frames = list()
@@ -100,16 +90,6 @@ def get_question_frames(question, question_frames):
 
 
 def get_answer_frames(answer, process_db):
-    """Answer frame extractor.
-
-    Args:
-        answer: A string representing the answer choice.
-        process_db: Contents of process_frames.tsv file.
-
-    Returns: a answer_frames (a list) of python dictionaries,
-        containing frames for the answer with frame elements
-        extracted from process_db.
-    """
     wnl = WordNetLemmatizer()
     answer_frames = list()
     for row in process_db:
@@ -125,16 +105,6 @@ def get_answer_frames(answer, process_db):
 
 
 def ranker(question_frames, answer_choices, process_db):
-    """Ranks the answer_choices by calling aligner.
-
-    Args:
-        question_frames: A python list containing question frame elements.
-        answer_choices: A python list containing answer choices.
-        process_db:  Contents of process_frames.tsv file.
-
-    Returns: A ranked list of tuples containing answer choices and their
-        scores.
-    """
     answer_scores = dict()
     for answer in answer_choices:
         logger.info("Answer: %s", answer)
@@ -148,18 +118,6 @@ def ranker(question_frames, answer_choices, process_db):
 
 
 def aligner(question_frames, answer_frames):
-    """Aligns a question frame with a answer frame and calls entailment service
-    to get a match score.
-
-    Args:
-        question_frames: A list of python dictionaries containg question frame
-            elements.
-        answer_frames: A list of python dictionaries containg answer frame
-            elements.
-
-    Returns: A number representing the match score of question frame with all
-        the answer frames.
-    """
     answer_scores = []
     for question_frame in question_frames:
         for answer_frame in answer_frames:
@@ -167,7 +125,6 @@ def aligner(question_frames, answer_frames):
             for frame_element in FRAME_ELEMENTS:
                 q_element = question_frame[frame_element]
                 a_element = answer_frame[frame_element]
-                print a_element, q_element
                 ret = entailment.get_ai2_textual_entailment(
                     a_element, q_element)
                 if ret['confidence'] is None:
@@ -198,9 +155,11 @@ def main():
 
     fh = open("output.tsv", "wt")
     row_string = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n"
+
     header = row_string.format("QUESTION", "OPTION_A", "OPTION_B", "OPTION_C",
                                "OPTION_D", "CORRECT_ANSWER",
                                "PREDICTED_ANSWER", "SCORES")
+
     fh.write(header)
 
     for num, row in enumerate(questions):
@@ -232,7 +191,6 @@ def main():
 
         fh.write(out_row)
     fh.close()
-    print "Done!"
 
 
 if __name__ == '__main__':
