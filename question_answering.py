@@ -144,7 +144,7 @@ def aligner(question_frames, answer_frames):
     scores = filter(lambda x: x > 0.0, answer_score)
     score = np.mean(scores) if (sum(scores) + len(scores)) > 0 else 0
     logger.info("SCORES: %s", answer_score)
-    logger.info("MEAN:%s", score)
+    logger.info("MEAN: %s", score)
     return score
 
 
