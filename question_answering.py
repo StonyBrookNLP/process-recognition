@@ -61,6 +61,7 @@ def read_tsv(filename):
 
 
 def get_processes(reader):
+    """Returns all the processes in the process_frames.tsv file."""
     processes = set()
     for row in reader:
         processes.add(row[PROCESS])
@@ -74,6 +75,15 @@ def clean_string(entry):
 
 
 def get_question_frames(question, question_frames):
+    """Question frame extractor.
+
+    Args:
+        question: A string representing the question without options.
+        question_frames: Contents of question_frames.tsv file.
+
+    Returns: A list of python dictionaries containing the the frames for the
+        question extracted from question_frames.
+    """
     q_sentences = set(question.strip().split('.'))
     q_sentences.add(question.strip())
     q_frames = list()
@@ -90,6 +100,17 @@ def get_question_frames(question, question_frames):
 
 
 def get_answer_frames(answer, process_db):
+    """Answer frame extractor.
+
+    Args:
+        answer: A string representing the answer choice.
+        process_db: Contents of process_frames.tsv file.
+
+
+    Returns: a answer_frames (a list) of python dictionaries,
+        containing frames for the answer with frame elements
+        extracted from process_db.
+    """
     wnl = WordNetLemmatizer()
     answer_frames = list()
     for row in process_db:
@@ -105,6 +126,17 @@ def get_answer_frames(answer, process_db):
 
 
 def ranker(question_frames, answer_choices, process_db):
+    """Ranks the answer_choices by calling aligner.
+
+    Args:
+        question_frames: A list of python dictionaries containing question
+            frames.
+        answer_choices: A python list containing answer choices.
+        process_db:  Contents of process_frames.tsv file.
+
+    Returns: A ranked list of tuples containing answer choices and their
+        scores.
+    """
     answer_scores = dict()
     for answer in answer_choices:
         logger.info("Answer: %s", answer)
@@ -118,6 +150,18 @@ def ranker(question_frames, answer_choices, process_db):
 
 
 def aligner(question_frames, answer_frames):
+    """Aligns a question frame with a answer frame and calls entailment service
+    to get a match score.
+
+    Args:
+        question_frames: A list of python dictionaries containing question
+            frames.
+        answer_frames: A list of python dictionaries containg answer frame
+            elements.
+
+    Returns: A number representing the match score of question frame with all
+        the answer frames.
+    """
     answer_scores = []
     for question_frame in question_frames:
         for answer_frame in answer_frames:
@@ -188,7 +232,6 @@ def main():
                                     row[OPTION_C], row[OPTION_D],
                                     row[ANS_MAP[row[ANSWER]]], p_answer,
                                     ranked_answers)
-
         fh.write(out_row)
     fh.close()
 
