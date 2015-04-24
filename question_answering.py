@@ -171,10 +171,25 @@ def aligner(question_frames, answer_frames):
                 a_element = answer_frame[frame_element]
                 ret = entailment.get_ai2_textual_entailment(
                     a_element, q_element)
-                if ret['confidence'] is None:
-                    score = 0
+                a_scores = map(lambda x: x['score'], ret['alignments'])
+                if len(a_scores):
+                    mean_a_score = np.mean(a_scores)
                 else:
-                    score = ret['confidence']
+                    mean_a_score = 0
+
+                confidence = ret['confidence'] if ret['confidence'] else 0
+                score1 = mean_a_score*confidence
+                ret = entailment.get_ai2_textual_entailment(
+                    q_element, a_element)
+                a_scores = map(lambda x: x['score'], ret['alignments'])
+                if len(a_scores):
+                    mean_a_score = np.mean(a_scores)
+                else:
+                    mean_a_score = 0
+
+                confidence = ret['confidence'] if ret['confidence'] else 0
+                score2 = mean_a_score*confidence
+                score = max(score1, score2)
                 frame_scores[frame_element] = (q_element, a_element, score)
             answer_scores.append(frame_scores)
     # logging loop
