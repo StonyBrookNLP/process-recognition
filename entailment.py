@@ -1,6 +1,9 @@
 import requests
 import json
 
+from memoized import Memoize
+from nltk import tokenize
+
 def get_list(sen):
     """
     Converts the sentence into a List such that it can be used as an POST request json blob data.
@@ -11,12 +14,13 @@ def get_list(sen):
     """
     res = list()
     count = 0
-    for word in sen.split():
+    for word in tokenize.word_tokenize(sen):
         l = [word, "Any", count]
         count += 1
         res.append(l)
     return res
 
+@Memoize
 def get_ai2_textual_entailment(t, h):
     """
     Returns the output of POST request to AI2 textual entailment service
