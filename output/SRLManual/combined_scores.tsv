@@ -1,0 +1,410 @@
+	QUESTION	ANSWER_CHOICE	MEAN_SCORE	MAX_SCORE	MEDIAN_SCORE	CORRECT_ANSWER
+0	A pot is heated on a stove. Which process causes the metal handle of the pot to also become hot? 	conduction	0.0356089452337	0.0858466723065	0.0204081632653	conduction
+1	A pot is heated on a stove. Which process causes the metal handle of the pot to also become hot? 	convection	0.0430109867196	0.0858466723065	0.0430109867196	conduction
+2	A pot is heated on a stove. Which process causes the metal handle of the pot to also become hot? 	combustion	0.0621141111227	0.0621141111227	0.0621141111227	conduction
+3	A pot is heated on a stove. Which process causes the metal handle of the pot to also become hot? 	radiation	0.00641548102135	0.00641548102135	0.00641548102135	conduction
+4	What starts the change from an igneous rock to a sedimentary rock? 	melting	0.861221421635	1.27423822715	1.0	weathering
+5	What starts the change from an igneous rock to a sedimentary rock? 	weathering	0.768343775616	1.5	1.0625	weathering
+6	When water is heated and it is rising into the air as a gas (like water vapor), this is called: 	condensation	1.32444655441	2.0	1.42847769255	evaporation
+7	When water is heated and it is rising into the air as a gas (like water vapor), this is called: 	precipitation	1.02035472513	1.18319252619	1.0	evaporation
+8	When water is heated and it is rising into the air as a gas (like water vapor), this is called: 	evaporation	1.33623179247	2.05848630579	1.3084959059	evaporation
+9	"<span class=""blank""> </span> is an animal's color or pattern that helps it blend in with its surroundings. "	mimicry	0.8125	1.0	1.0	camouflage
+10	"<span class=""blank""> </span> is an animal's color or pattern that helps it blend in with its surroundings. "	camouflage	0.971720382714	1.67377225682	1.0	camouflage
+11	mowing the lawn 	physical change	0.353026100042	0.468191734092	0.353026100042	physical change
+12	mowing the lawn 	chemical change	0.0	0.0	0.0	physical change
+13	The path Earth makes around the sun is called the 	rotation	0.000141357729174	0.000268589495127	0.000141357729174	orbit
+14	The path Earth makes around the sun is called the 	orbit	0.418797585627	1.0	0.417347381443	orbit
+15	"The process by which a gas changes into a liquid is called <span class=""blank""> </span>. "	evaporation	0.924223880891	1.13516257256	1.01249343453	condensation
+16	"The process by which a gas changes into a liquid is called <span class=""blank""> </span>. "	condensation	1.72669150551	3.0	1.61908587432	condensation
+17	"The process by which a gas changes into a liquid is called <span class=""blank""> </span>. "	precipitation	0.208873770457	0.853603847415	0.0277777777778	condensation
+18	"The process by which a gas changes into a liquid is called <span class=""blank""> </span>. "	transpiration	0.245238760581	0.424068822564	0.176484886614	condensation
+19	The continuous movement of nitrogen between air, soil, plants and animals. 	carbon cycle	1.0	1.0	1.0	nitrogen cycle
+20	The continuous movement of nitrogen between air, soil, plants and animals. 	nitrogen cycle	1.0	1.0	1.0	nitrogen cycle
+21	Andy is cooking a piece of ham in a pan. 	conduction	0.0	0.0	0.0	conduction
+22	Andy is cooking a piece of ham in a pan. 	friction	0.0525013988665	0.0981777777778	0.0525013988665	conduction
+23	What causes sunflowers to bend toward the sunlight? 	negative tropism	0.507341702795	1.00233772658	0.507341702795	positive tropism
+24	What causes sunflowers to bend toward the sunlight? 	transportation	1.0	1.0	1.0	positive tropism
+25	What causes sunflowers to bend toward the sunlight? 	positive tropism	0.67155319555	1.01234567901	1.0	positive tropism
+26	What causes sunflowers to bend toward the sunlight? 	pollination	1.0	1.0	1.0	positive tropism
+27	Waves change a shoreline by erosion and __________. 	deposition	0.0861810274711	0.0861810274711	0.0861810274711	deposition
+28	Waves change a shoreline by erosion and __________. 	condensation	0.0	0.0	0.0	deposition
+29	Waves change a shoreline by erosion and __________. 	precipitation	0.0	0.0	0.0	deposition
+30	Waves change a shoreline by erosion and __________. 	evaporation	0.00842247714138	0.00842247714138	0.00842247714138	deposition
+31	"<span class=""blank""> </span>is the process of liquid water turning into water vapor. "	storage	1.0	1.0	1.0	evaporation
+32	"<span class=""blank""> </span>is the process of liquid water turning into water vapor. "	condensation	0.930421623999	1.44802332361	0.85695538509	evaporation
+33	"<span class=""blank""> </span>is the process of liquid water turning into water vapor. "	precipitation	0.889442584804	1.14802787814	1.0	evaporation
+34	"<span class=""blank""> </span>is the process of liquid water turning into water vapor. "	evaporation	1.43905477713	2.0	1.80683681061	evaporation
+35	A new aluminum can made from used cans is an example of 	repairing	0.0309748289545	0.0891015366281	0.00191147511773	recycling
+36	A new aluminum can made from used cans is an example of 	reducing	0.00100657478182	0.00222597947465	0.000701723608614	recycling
+37	A new aluminum can made from used cans is an example of 	reusing	0.526937233499	0.526937233499	0.526937233499	recycling
+38	A new aluminum can made from used cans is an example of 	recycling	1.44214437682	1.44214437682	1.44214437682	recycling
+39	Which of the following processes makes it possible for plants to use energy from sunlight to produce their own food? 	metamorphosis	0.211732561726	0.211732561726	0.211732561726	photosynthesis
+40	Which of the following processes makes it possible for plants to use energy from sunlight to produce their own food? 	photosynthesis	1.2236639607	2.0	1.01234567901	photosynthesis
+41	Which of the following processes makes it possible for plants to use energy from sunlight to produce their own food? 	pollination	1.0	1.0	1.0	photosynthesis
+42	Which of the following processes makes it possible for plants to use energy from sunlight to produce their own food? 	reproduction	1.02390134425	2.0	1.0	photosynthesis
+43	Burning a match is a 	physical change	0.0314403391456	0.0673675526626	0.0120441153334	chemical change
+44	Burning a match is a 	chemical change	0.0175010528854	0.0295014880952	0.0175010528854	chemical change
+45	bleaching your hair 	physical change	0.244458919169	0.510374666735	0.0980334968999	chemical change
+46	bleaching your hair 	chemical change	0.183446894059	0.297234879392	0.208333333333	chemical change
+47	A reaction that forms water and a salt is called a 	chemical reaction	0.754004090293	1.0	0.964066587576	neutralization reaction
+48	A reaction that forms water and a salt is called a 	neutralization reaction	1.01388888889	1.02777777778	1.01388888889	neutralization reaction
+49	What is the force that slows down moving things? 	motion	0.00905526192044	0.0128319460959	0.00905526192044	friction
+50	What is the force that slows down moving things? 	acceleration	0.231619003201	0.689750544786	0.126823633504	friction
+51	What is the force that slows down moving things? 	gravity	0.270002333804	0.793490300171	0.127984318421	friction
+52	What is the force that slows down moving things? 	friction	0.345918740984	1.1268236335	0.0889933552252	friction
+53	"To move in a circle around an object is to <span class=""blank""> </span> "	revolve	0.110466556863	0.331775444427	0.036696927675	revolve
+54	"To move in a circle around an object is to <span class=""blank""> </span> "	rotate	0.297168071544	1.0	0.0900957944773	revolve
+55	"To move in a circle around an object is to <span class=""blank""> </span> "	eclipse	0.0	0.0	0.0	revolve
+56	Which of the following is an unwanted change in the environment caused by harmful substances? 	overpopulation	0.0143100374613	0.0143100374613	0.0143100374613	pollution
+57	Which of the following is an unwanted change in the environment caused by harmful substances? 	evolution	0.019527350373	0.0728742453242	0.00261327338753	pollution
+58	Which of the following is an unwanted change in the environment caused by harmful substances? 	pollution	0.372956778085	0.872711945757	0.322277152989	pollution
+59	"<span class=""blank""> </span> is the process of water vapor becoming liquid water when it cools. "	storage	1.0	1.0	1.0	condensation
+60	"<span class=""blank""> </span> is the process of water vapor becoming liquid water when it cools. "	condensation	1.91635886923	2.65294927586	2.0	condensation
+61	"<span class=""blank""> </span> is the process of water vapor becoming liquid water when it cools. "	precipitation	0.956182765248	1.0	1.0	condensation
+62	"<span class=""blank""> </span> is the process of water vapor becoming liquid water when it cools. "	evaporation	1.11169517829	2.25560089877	1.11889805719	condensation
+63	The process of cutting into a hillside to slow the speed of water flowing down a slope 	terracing	0.175962597325	0.243045591811	0.185378204346	terracing
+64	The process of cutting into a hillside to slow the speed of water flowing down a slope 	contour plowing	0.391671172102	0.51239282856	0.391671172102	terracing
+65	The process of cutting into a hillside to slow the speed of water flowing down a slope 	windbreaking	0.139442872244	0.273325244561	0.0738269118017	terracing
+66	The process of cutting into a hillside to slow the speed of water flowing down a slope 	fertilization	0.0	0.0	0.0	terracing
+67	The process of planting grasses between rows of other crops to prevent soil from being washed or blown away 	strip farming	0.10612415585	0.428278128336	0.00615586136785	strip farming
+68	The process of planting grasses between rows of other crops to prevent soil from being washed or blown away 	contour plowing	0.2156004507	0.378226370147	0.2156004507	strip farming
+69	The process of planting grasses between rows of other crops to prevent soil from being washed or blown away 	fertilization	0.208412098299	0.208412098299	0.208412098299	strip farming
+70	The process of planting grasses between rows of other crops to prevent soil from being washed or blown away 	crop rotation	0.00510204081633	0.00510204081633	0.00510204081633	strip farming
+71	A characteristic of an organism that increases its chances of survival in its environment. 	adaptation	1.20703125	3.0	1.0	adaptation
+72	A characteristic of an organism that increases its chances of survival in its environment. 	camouflage	0.811621219068	1.30469920635	1.0	adaptation
+73	What is water vapor in the air called? 	evaporation	0.587654141421	1.0	0.454883023756	humidity
+74	What is water vapor in the air called? 	respiration	0.0	0.0	0.0	humidity
+75	What is water vapor in the air called? 	humidity	1.0	1.0	1.0	humidity
+76	"Precipitation that falls in form of balls of ice is called <span class=""blank""> </span>. "	hail	0.940004333064	1.44215887282	0.940107067057	hail
+77	"Precipitation that falls in form of balls of ice is called <span class=""blank""> </span>. "	rain	0.197884906196	0.399187301224	0.155188246097	hail
+78	"Precipitation that falls in form of balls of ice is called <span class=""blank""> </span>. "	snow	0.992626012216	1.40176849511	1.17305202546	hail
+79	"A/an <span class=""blank""> </span> is something that helps a living thing survive in its environment. "	adaptation	1.8823442159	1.8823442159	1.8823442159	adaptation
+80	"A/an <span class=""blank""> </span> is something that helps a living thing survive in its environment. "	physical change	0.120647241297	0.407123938188	0.00728428891864	adaptation
+81	"A/an <span class=""blank""> </span> is something that helps a living thing survive in its environment. "	camouflage	0.320869968508	0.882344215899	0.171157502134	adaptation
+82	A long and strong beak that tears flesh is 	tearing	1.03852599781	1.15435021589	1.0	tearing
+83	A long and strong beak that tears flesh is 	spearing	0.00146038958214	0.00146038958214	0.00146038958214	tearing
+84	Students want to find out at which temperature bean plants grow tallest. Which science process skill would be used to find this temperature? 	measuring	0.0	0.0	0.0	measuring
+85	Students want to find out at which temperature bean plants grow tallest. Which science process skill would be used to find this temperature? 	classifying	0.494709155344	0.494709155344	0.494709155344	measuring
+86	Students want to find out at which temperature bean plants grow tallest. Which science process skill would be used to find this temperature? 	predicting	0.0	0.0	0.0	measuring
+87	Students want to find out at which temperature bean plants grow tallest. Which science process skill would be used to find this temperature? 	inferring	0.00694444444444	0.00694444444444	0.00694444444444	measuring
+88	__________ is the movement of a group of one type of animal from one region to another and back again. 	hibernation	0.963858044585	1.0	1.0	migration
+89	__________ is the movement of a group of one type of animal from one region to another and back again. 	migration	1.37831984008	2.0	1.10835363201	migration
+90	If a fire destroys a forest, new plants will grow. 	conservation	0.0789407681068	0.229718989871	0.0047265625	succession
+91	If a fire destroys a forest, new plants will grow. 	erosion	0.0208131898738	0.0208131898738	0.0208131898738	succession
+92	If a fire destroys a forest, new plants will grow. 	succession	0.000559110760307	0.000559110760307	0.000559110760307	succession
+93	When liquids are heated, this occurs: 	melting	0.111053073335	0.173333333333	0.135162572564	evaporation
+94	When liquids are heated, this occurs: 	evaporation	0.687574488636	1.17333333333	1.02815856536	evaporation
+95	"Babies will <span class=""blank""> </span> or get traits from their parents. "	reproduce	0.137995344549	0.229600694444	0.229600694444	inherit
+96	"Babies will <span class=""blank""> </span> or get traits from their parents. "	survive	0.00087724104975	0.00087724104975	0.00087724104975	inherit
+97	"Babies will <span class=""blank""> </span> or get traits from their parents. "	inherit	0.0772660106515	0.229600694444	0.00173611111111	inherit
+98	The movement of an animal from one place to another as the seasons change is called 	hibernation	1.02527357806	1.59341466335	1.07802417475	migration
+99	The movement of an animal from one place to another as the seasons change is called 	decomposition	0.454060636226	1.0	0.268018505412	migration
+100	The movement of an animal from one place to another as the seasons change is called 	migration	1.67007934821	3.0	1.52438089025	migration
+101	The movement of an animal from one place to another as the seasons change is called 	pollination	0.0	0.0	0.0	migration
+102	"Magnets contain a force that <span class=""blank""> </span> certain metals like iron. "	attracts	0.322315605081	0.666666666667	0.127551020408	attracts
+103	"Magnets contain a force that <span class=""blank""> </span> certain metals like iron. "	repels	0.197953701466	0.315151660371	0.221453287197	attracts
+104	What is the third step of the water cycle? 	evaporation	0.0188650130968	0.0413223140496	0.0139430163209	precipitation
+105	What is the third step of the water cycle? 	run off	1.0	1.0	1.0	precipitation
+106	What is the third step of the water cycle? 	precipitation	0.361664033411	0.361664033411	0.361664033411	precipitation
+107	What is the third step of the water cycle? 	condensation	0.367504467355	0.367504467355	0.367504467355	precipitation
+108	An area received six inches of snow during the winter. Before the snow can continue through the water cycle as ground water or runoff, it must first 	evaporate	0.269042229284	0.693241415054	0.202084704942	melt
+109	An area received six inches of snow during the winter. Before the snow can continue through the water cycle as ground water or runoff, it must first 	condense	0.502939855629	1.0	0.428477692545	melt
+110	An area received six inches of snow during the winter. Before the snow can continue through the water cycle as ground water or runoff, it must first 	melt	0.580558453256	1.23919968812	0.577452509237	melt
+111	An area received six inches of snow during the winter. Before the snow can continue through the water cycle as ground water or runoff, it must first 	freeze	0.345903280411	1.01942356836	0.251408145864	melt
+112	What is the process of the movement of water and dissolved materials through the cell membrane? 	diffusion	0.344054439832	1.02777777778	0.262045821803	osmosis
+113	What is the process of the movement of water and dissolved materials through the cell membrane? 	osmosis	1.23158245381	2.14046016889	0.708548203933	osmosis
+114	The bending of light as it passes from one material into another is 	reflection	0.871239583407	2.0	1.0	refraction
+115	The bending of light as it passes from one material into another is 	refraction	1.01557550953	1.03062620454	1.02129985267	refraction
+116	The process by which molten material adds new oceanic crust to the ocean floor 	seafloor spreading theory	1.10309848059	1.10309848059	1.10309848059	seafloor spreading theory
+117	The process by which molten material adds new oceanic crust to the ocean floor 	continental drift theory	0.00013931557106	0.00013931557106	0.00013931557106	seafloor spreading theory
+118	To take in light 	reflect	0.000273400873018	0.000435939353734	0.000273400873018	absorb
+119	To take in light 	absorb	0.0537394714004	0.212210036062	0.000915949846472	absorb
+120	To take in light 	refract	0.0	0.0	0.0	absorb
+121	The process of making a new plant from the joining of a sperm and a egg cell is known as 	asexual reproduction	0.240185357904	0.240185357904	0.240185357904	sexual reproduction
+122	The process of making a new plant from the joining of a sperm and a egg cell is known as 	self-pollination	0.267438465009	0.313425834685	0.273869470711	sexual reproduction
+123	The process of making a new plant from the joining of a sperm and a egg cell is known as 	cross-pollination	0.0177128311277	0.0224637442019	0.0177128311277	sexual reproduction
+124	The process of making a new plant from the joining of a sperm and a egg cell is known as 	sexual reproduction	0.408232476046	0.692641977447	0.408232476046	sexual reproduction
+125	How does your body acquire the oxygen the cells in your body need to function? 	diffusion	0.701314559873	0.876464569696	0.876464569696	breathing
+126	How does your body acquire the oxygen the cells in your body need to function? 	absorption	0.0311418685121	0.0311418685121	0.0311418685121	breathing
+127	How does your body acquire the oxygen the cells in your body need to function? 	breathing	0.00516794041284	0.00951248513674	0.00516794041284	breathing
+128	How does your body acquire the oxygen the cells in your body need to function? 	osmosis	0.491828475423	1.18100328096	0.103073194581	breathing
+129	A force that resists motion created by objects rubbing together. 	gravity	0.170395278061	0.666666666667	0.127551020408	friction
+130	A force that resists motion created by objects rubbing together. 	friction	0.530612780109	1.0	0.540374048713	friction
+131	"Your respiratory system helps you <span class=""blank""> </span>. "	breathe	0.0	0.0	0.0	breathe
+132	"Your respiratory system helps you <span class=""blank""> </span>. "	move	0.0	0.0	0.0	breathe
+133	"Your respiratory system helps you <span class=""blank""> </span>. "	digest food	0.0	0.0	0.0	breathe
+134	corroding metal 	physical change	0.437003427958	0.666666666667	0.444276836404	chemical change
+135	corroding metal 	chemical change	0.286881000112	0.666666666667	0.196635951124	chemical change
+136	What process produces sex cells? 	mitosis	0.510980659482	0.510980659482	0.510980659482	meiosis
+137	What process produces sex cells? 	splitting	0.0	0.0	0.0	meiosis
+138	What process produces sex cells? 	meiosis	0.365249308947	0.510980659482	0.380490329741	meiosis
+139	"Energy from the sun reaches earth by <span class=""blank""> </span>. "	convection	0.00991607561097	0.0295405508086	0.000204673327271	radiation
+140	"Energy from the sun reaches earth by <span class=""blank""> </span>. "	radiation	1.0	1.0	1.0	radiation
+141	"Energy from the sun reaches earth by <span class=""blank""> </span>. "	reflection	0.245589330223	0.712076632645	0.0123456790123	radiation
+142	"Energy from the sun reaches earth by <span class=""blank""> </span>. "	friction	0.135986181177	0.364863768151	0.0894356365134	radiation
+143	Which is the best example of natureâ??s recycling process? 	the water cycle	0.0	0.0	0.0	the water cycle
+144	Which is the best example of natureâ??s recycling process? 	erosion	0.0	0.0	0.0	the water cycle
+145	Which is the best example of natureâ??s recycling process? 	weathering	0.0	0.0	0.0	the water cycle
+146	When closely related living things are bred together, it is called 	adaptation	0.0	0.0	0.0	crossbreeding
+147	When closely related living things are bred together, it is called 	crossbreeding	0.0277777777778	0.0277777777778	0.0277777777778	crossbreeding
+148	mixing lemonade powder into water 	physical change	0.362311981925	0.731497797868	0.215224326746	physical change
+149	mixing lemonade powder into water 	chemical change	0.615322868314	2.01001737156	0.21484375	physical change
+150	When something changes position, it is in? 	motion	0.517697241636	1.0	0.530521671356	motion
+151	When something changes position, it is in? 	acceleration	0.252128054416	0.42241349431	0.13860442782	motion
+152	When something changes position, it is in? 	gravity	0.0	0.0	0.0	motion
+153	When something changes position, it is in? 	friction	0.00235472611103	0.00291606948734	0.00291606948734	motion
+154	Being able to tell different sounds apart is called 	sound discrimination	0.442468286062	0.617059948568	0.326073844391	sound discrimination
+155	Being able to tell different sounds apart is called 	vibration	0.334443356423	0.495983556151	0.411028700271	sound discrimination
+156	The process of adding fertilizer to soil to replace nutrients used up by previous crops 	terracing	0.000235381346776	0.000278000761269	0.000235381346776	fertilization
+157	The process of adding fertilizer to soil to replace nutrients used up by previous crops 	strip farming	0.004856434288	0.00943486781474	0.004856434288	fertilization
+158	The process of adding fertilizer to soil to replace nutrients used up by previous crops 	crop rotation	0.0	0.0	0.0	fertilization
+159	The process of adding fertilizer to soil to replace nutrients used up by previous crops 	fertilization	0.0	0.0	0.0	fertilization
+160	"The movement of water back and forth between air and the Earth's surface is called the<span class=""blank""> </span>. "	water cycle	1.21360827648	2.0	1.0	water cycle
+161	"The movement of water back and forth between air and the Earth's surface is called the<span class=""blank""> </span>. "	condensation	0.855018067718	1.0	1.0	water cycle
+162	"The movement of water back and forth between air and the Earth's surface is called the<span class=""blank""> </span>. "	evaporation	0.749838170658	1.09748303433	1.0	water cycle
+163	What do we call the process of a seed developing into a plant? 	germination	1.69275072463	3.0	1.50421524664	germination
+164	What do we call the process of a seed developing into a plant? 	regeneration	0.2503692012	1.0	0.000678393103438	germination
+165	"When an object orbits another object, it <span class=""blank""> </span>. "	vibrates	0.0	0.0	0.0	revolves
+166	"When an object orbits another object, it <span class=""blank""> </span>. "	rotates	0.0845516476324	0.0845516476324	0.0845516476324	revolves
+167	"When an object orbits another object, it <span class=""blank""> </span>. "	revolves	0.0507359652767	0.0829438611068	0.04	revolves
+168	"When an object orbits another object, it <span class=""blank""> </span>. "	explodes	0.0	0.0	0.0	revolves
+169	"The process in which a snake loses its outer skin is called <span class=""blank""> </span>. "	shedding	0.369241062759	0.54944785576	0.369241062759	molting
+170	"The process in which a snake loses its outer skin is called <span class=""blank""> </span>. "	loosening	0.0	0.0	0.0	molting
+171	"The process in which a snake loses its outer skin is called <span class=""blank""> </span>. "	molting	0.249208115382	0.468859624696	0.204954247896	molting
+172	"<span class=""blank""> </span> is a change of position. "	motion	0.764523955072	1.0	0.907107974842	motion
+173	"<span class=""blank""> </span> is a change of position. "	gravity	0.0	0.0	0.0	motion
+174	The process of change from an egg to an adult butterfly is ____________. 	metamorphosis	0.490594977114	0.550185607844	0.490594977114	metamorphosis
+175	The process of change from an egg to an adult butterfly is ____________. 	photosynthesis	0.0	0.0	0.0	metamorphosis
+176	The process of change from an egg to an adult butterfly is ____________. 	reproduction	0.289595652362	0.597811324196	0.280203045557	metamorphosis
+177	To change from a solid into a liquid is to 	solidify	0.383623889769	0.976754567569	0.268947096352	melt
+178	To change from a solid into a liquid is to 	melt	2.21167301002	3.0	2.25	melt
+179	To change from a solid into a liquid is to 	freeze	0.73076414087	1.651919101	0.624349635796	melt
+180	What is it called when an object is moved from one position to another? 	work	0.0	0.0	0.0	work
+181	What is it called when an object is moved from one position to another? 	gravity	0.666666666667	0.666666666667	0.666666666667	work
+182	What process ends with a new and improved plant? 	germinating	0.767562437618	1.0	1.0	grafting
+183	What process ends with a new and improved plant? 	photosynthesis	0.0	0.0	0.0	grafting
+184	What process ends with a new and improved plant? 	grafting	0.357502173468	0.421867862026	0.357502173468	grafting
+185	The process of changing from a liquid state to a gas state 	sublimation	0.669411200341	1.00524253299	0.825124391365	evaporation
+186	The process of changing from a liquid state to a gas state 	condensation	0.257418836572	0.442355403468	0.260060921089	evaporation
+187	The process of changing from a liquid state to a gas state 	evaporation	0.918633250623	2.0	1.02313704502	evaporation
+188	Which of the following must all plant and animal species do in order for each species to survive? 	migrate	0.779115057585	1.0	1.0	reproduce
+189	Which of the following must all plant and animal species do in order for each species to survive? 	reproduce	0.902869475453	1.0	1.0	reproduce
+190	Which of the following must all plant and animal species do in order for each species to survive? 	make food	1.0	1.0	1.0	reproduce
+191	The process of wearing away rocks by natural means is called 	erosion	0.506164580984	1.0	0.508401920439	weathering
+192	The process of wearing away rocks by natural means is called 	weathering	1.0	1.0	1.0	weathering
+193	The continuous transfer of carbon between the atmosphere and organisms 	carbon cycle	1.04590795492	1.140625	1.02150340984	carbon cycle
+194	The continuous transfer of carbon between the atmosphere and organisms 	nitrogen cycle	0.0	0.0	0.0	carbon cycle
+195	What is the process that moves pieces of rock and soil? 	erosion	0.743498779249	2.0	0.667680845007	erosion
+196	What is the process that moves pieces of rock and soil? 	weathering	0.456643535841	1.015625	0.236342679206	erosion
+197	Then droplets of water (rain, snow, sleet, or hail) fall back to the earth, this is called: 	condensation	0.374179567799	1.0	0.283493692045	precipitation
+198	Then droplets of water (rain, snow, sleet, or hail) fall back to the earth, this is called: 	precipitation	1.22748754422	2.0	1.37071702092	precipitation
+199	Then droplets of water (rain, snow, sleet, or hail) fall back to the earth, this is called: 	evaporation	0.719916577627	1.02347555927	0.864936852483	precipitation
+200	"Liquid water becomes a gas called water vapor through the process of <span class=""blank""> </span> "	humidity	1.08587707427	1.25763122282	1.0	evaporation
+201	"Liquid water becomes a gas called water vapor through the process of <span class=""blank""> </span> "	condensation	1.00509922251	1.44802332361	0.861048355612	evaporation
+202	"Liquid water becomes a gas called water vapor through the process of <span class=""blank""> </span> "	transpiration	0.322614768261	0.454844088099	0.355667220297	evaporation
+203	"Liquid water becomes a gas called water vapor through the process of <span class=""blank""> </span> "	evaporation	1.69851986741	2.97675456757	1.90109980548	evaporation
+204	To go into a deep sleep. 	migrate	0.0	0.0	0.0	hibernate
+205	To go into a deep sleep. 	hibernate	0.507872229448	1.0	0.287703227295	hibernate
+206	To go into a deep sleep. 	camouflage	0.0	0.0	0.0	hibernate
+207	The process of plowing furrows across a slope instead of up and down to prevent rainwater from carrying away topsoil down hills 	terracing	0.140024187491	0.321090697099	0.11950138118	contour plowing
+208	The process of plowing furrows across a slope instead of up and down to prevent rainwater from carrying away topsoil down hills 	strip farming	0.376662166539	0.624184223219	0.376662166539	contour plowing
+209	The process of plowing furrows across a slope instead of up and down to prevent rainwater from carrying away topsoil down hills 	contour plowing	0.455893953942	0.585709210565	0.455893953942	contour plowing
+210	The process of plowing furrows across a slope instead of up and down to prevent rainwater from carrying away topsoil down hills 	windbreaking	0.10087707208	0.181756516188	0.110875085635	contour plowing
+211	When water particles cool and change from a gas (like water vapor) back to a liquid, this is called: 	condensation	1.74855657984	2.45034818841	1.68173971684	condensation
+212	When water particles cool and change from a gas (like water vapor) back to a liquid, this is called: 	precipitation	0.843085039428	1.07228166482	1.00743851002	condensation
+213	When water particles cool and change from a gas (like water vapor) back to a liquid, this is called: 	evaporation	0.912890784564	1.55265559821	0.911075802698	condensation
+214	What make oceans bigger? 	deposition	0.367007770109	1.0015051174	0.208494909132	deposition
+215	What make oceans bigger? 	accumulation	0.152032079418	0.365280954372	0.119666103094	deposition
+216	What make oceans bigger? 	rain	0.291032126245	0.362898892128	0.291032126245	deposition
+217	"A(n) <span class=""blank""> </span> is a modified feature that helps a plant survive in the environment. "	adaptation	1.0818215849	1.26396657753	1.03165988104	adaptation
+218	"A(n) <span class=""blank""> </span> is a modified feature that helps a plant survive in the environment. "	change	1.01584197554	1.01584197554	1.01584197554	adaptation
+219	"When an object spins on its axis, it <span class=""blank""> </span>. "	vibrates	0.0246911933411	0.0246911933411	0.0246911933411	rotates
+220	"When an object spins on its axis, it <span class=""blank""> </span>. "	rotates	0.227824024636	1.0	0.0217008570365	rotates
+221	"When an object spins on its axis, it <span class=""blank""> </span>. "	revolves	0.0573160086808	0.0625	0.0625	rotates
+222	"When an object spins on its axis, it <span class=""blank""> </span>. "	explodes	0.0	0.0	0.0	rotates
+223	Colors, patterns and shapes that disguise an animal from predators. 	migrate	1.01016122919	1.07259915322	1.0	camouflage
+224	Colors, patterns and shapes that disguise an animal from predators. 	hibernate	1.01147833711	1.1363839176	1.0	camouflage
+225	Colors, patterns and shapes that disguise an animal from predators. 	camouflage	1.07531540196	1.275	1.275	camouflage
+226	"Through <span class=""blank""> </span> human beings are able to produce new human beings. "	digestion	0.73741464814	1.0	0.73741464814	reproduction
+227	"Through <span class=""blank""> </span> human beings are able to produce new human beings. "	reproduction	0.944743581148	2.32077322078	0.942089879547	reproduction
+228	"Through <span class=""blank""> </span> human beings are able to produce new human beings. "	circulation	0.254137687765	1.0	0.008227888394	reproduction
+229	The process of planting different crops on the same land in different years to help in adding nutrients back in the soil 	terracing	0.153821622168	0.321090697099	0.132655612621	crop rotation
+230	The process of planting different crops on the same land in different years to help in adding nutrients back in the soil 	contour plowing	0.204676144776	0.260703698697	0.204676144776	crop rotation
+231	The process of planting different crops on the same land in different years to help in adding nutrients back in the soil 	crop rotation	0.0	0.0	0.0	crop rotation
+232	The process of planting different crops on the same land in different years to help in adding nutrients back in the soil 	fertilization	0.0	0.0	0.0	crop rotation
+233	The process of breaking down rocks into smaller particles is called: 	sedimentation	0.0168038408779	0.0168038408779	0.0168038408779	weathering
+234	The process of breaking down rocks into smaller particles is called: 	erosion	0.506164580984	1.0	0.508401920439	weathering
+235	The process of breaking down rocks into smaller particles is called: 	weathering	0.697205614737	1.0	1.0	weathering
+236	"A change in the way matter looks is called <span class=""blank""> </span>? "	physical change	1.29516539728	2.0	1.01536780275	physical change
+237	"A change in the way matter looks is called <span class=""blank""> </span>? "	chemical change	1.11684402259	1.88235154491	1.0	physical change
+238	The movement of an object all the way around another planet is called 	revolving	1.0	1.0	1.0	revolving
+239	The movement of an object all the way around another planet is called 	rotation	0.579265306122	1.0	0.408163265306	revolving
+240	The movement of an object all the way around another planet is called 	gravity	0.0	0.0	0.0	revolving
+241	"<span class=""blank""> </span> is a process in the water cycle, where water vapor rises into the atmosphere. "	transpiration	0.000138943191828	0.000138943191828	0.000138943191828	evaporation
+242	"<span class=""blank""> </span> is a process in the water cycle, where water vapor rises into the atmosphere. "	condensation	0.869136790745	1.0	1.0	evaporation
+243	"<span class=""blank""> </span> is a process in the water cycle, where water vapor rises into the atmosphere. "	precipitation	0.940053288225	1.0	1.0	evaporation
+244	"<span class=""blank""> </span> is a process in the water cycle, where water vapor rises into the atmosphere. "	evaporation	0.604661446619	1.04611678165	0.460541692837	evaporation
+245	"Offspring come from a single parent during <span class=""blank""> </span>. "	asexual reproduction	1.52209584982	2.0	2.0	asexual reproduction
+246	"Offspring come from a single parent during <span class=""blank""> </span>. "	sexual reproduction	1.29532387574	1.59064775148	1.29532387574	asexual reproduction
+247	After a rain, a puddle of water remains on a sidewalk. After a day of sunshine, the puddle is gone. Which process is most responsible for the disappearance of the puddle? 	transpiration	0.0434737200844	0.455310258734	0.00308641975309	evaporation
+248	After a rain, a puddle of water remains on a sidewalk. After a day of sunshine, the puddle is gone. Which process is most responsible for the disappearance of the puddle? 	condensation	0.161669083229	1.0	0.0108054076343	evaporation
+249	After a rain, a puddle of water remains on a sidewalk. After a day of sunshine, the puddle is gone. Which process is most responsible for the disappearance of the puddle? 	precipitation	0.307643277825	1.0	0.0277777777778	evaporation
+250	After a rain, a puddle of water remains on a sidewalk. After a day of sunshine, the puddle is gone. Which process is most responsible for the disappearance of the puddle? 	evaporation	0.498429216311	1.0	0.46534257833	evaporation
+251	Select whether the example is a chemical change or a physical change<br/><br/>Glass breaking 	physical change	0.137335876745	0.524536873572	0.0422948510387	physical change
+252	Select whether the example is a chemical change or a physical change<br/><br/>Glass breaking 	chemical change	0.017023618614	0.0559090909091	0.00606672507971	physical change
+253	When one object passes through the shadow of another it is a? 	eclipse	0.317635322957	0.317635322957	0.317635322957	eclipse
+254	When one object passes through the shadow of another it is a? 	reflection	0.00166048750098	0.00302486406017	0.00166048750098	eclipse
+255	The process that forms reproductive cells is called? 	mitosis	0.423869449189	0.423869449189	0.423869449189	meiosis
+256	The process that forms reproductive cells is called? 	meiosis	0.3216937038	0.423869449189	0.336934724595	meiosis
+257	fireworks exploding 	physical change	0.607040104256	1.24544682928	0.521604938272	chemical change
+258	fireworks exploding 	chemical change	0.496010915499	1.0	0.435973332202	chemical change
+259	Which is reproduction that requires a male and female cell? 	mitosis	0.0	0.0	0.0	sexual reproduction
+260	Which is reproduction that requires a male and female cell? 	asexual reproduction	1.0	1.0	1.0	sexual reproduction
+261	Which is reproduction that requires a male and female cell? 	sexual reproduction	1.14424680255	1.28849360509	1.14424680255	sexual reproduction
+262	When you rub your hands together very quickly, it produces heat and is called 	gravity	1.0	1.0	1.0	friction
+263	When you rub your hands together very quickly, it produces heat and is called 	friction	0.511215004642	1.0	0.511215004642	friction
+264	The process by which a liquid changes to a gas 	water cycle	0.566467810204	1.9609886422	0.176956441128	evaporation
+265	The process by which a liquid changes to a gas 	condensation	0.548026423639	1.0	0.535162572564	evaporation
+266	The process by which a liquid changes to a gas 	evaporation	1.8594191187	3.0	1.87765530887	evaporation
+267	"Teeth help us to <span class=""blank""> </span>. "	swim	0.0	0.0	0.0	talk
+268	"Teeth help us to <span class=""blank""> </span>. "	write	0.0	0.0	0.0	talk
+269	"Teeth help us to <span class=""blank""> </span>. "	talk	0.0	0.0	0.0	talk
+270	When a liquid changes to a gas it is called 	condensation	0.548026423639	1.0	0.535162572564	evaporation
+271	When a liquid changes to a gas it is called 	evaporation	1.8594191187	3.0	1.87765530887	evaporation
+272	When plants use stored sugar for energy, they go through a process called 	perspiration	0.0	0.0	0.0	respiration
+273	When plants use stored sugar for energy, they go through a process called 	photosynthesis	1.00099632246	1.00498161231	1.0	respiration
+274	When plants use stored sugar for energy, they go through a process called 	respiration	1.0	1.0	1.0	respiration
+275	When plants use stored sugar for energy, they go through a process called 	transpiration	1.0	1.0	1.0	respiration
+276	"The final stage of the erosional process in which materials are dropped in another location is called <span class=""blank""> </span>. "	deposition	0.316238266581	1.0	0.157571621763	deposition
+277	"The final stage of the erosional process in which materials are dropped in another location is called <span class=""blank""> </span>. "	dropping	0.147360600252	0.147360600252	0.147360600252	deposition
+278	"The final stage of the erosional process in which materials are dropped in another location is called <span class=""blank""> </span>. "	deposit	0.316238266581	1.0	0.157571621763	deposition
+279	"<span class=""blank""> </span> is the process of changing liquid water to water vapor. "	condensation	0.930421623999	1.44802332361	0.85695538509	evaporation
+280	"<span class=""blank""> </span> is the process of changing liquid water to water vapor. "	storage	1.0	1.0	1.0	evaporation
+281	"<span class=""blank""> </span> is the process of changing liquid water to water vapor. "	evaporation	1.43905477713	2.0	1.80683681061	evaporation
+282	What helps an animal look like another animal to protect it from predators? 	mimicry	1.08854622704	1.82782879524	1.13817805645	mimicry
+283	What helps an animal look like another animal to protect it from predators? 	migration	0.97216219388	1.1869227851	1.0	mimicry
+284	What helps an animal look like another animal to protect it from predators? 	camouflage	0.94067116554	1.64617576571	1.0	mimicry
+285	"<span class=""blank""> </span> is the process of liquid water turning into water vapor"	storage	1.0	1.0	1.0	evaporation
+286	"<span class=""blank""> </span> is the process of liquid water turning into water vapor"	condensation	0.930421623999	1.44802332361	0.85695538509	evaporation
+287	"<span class=""blank""> </span> is the process of liquid water turning into water vapor"	precipitation	0.889442584804	1.14802787814	1.0	evaporation
+288	"<span class=""blank""> </span> is the process of liquid water turning into water vapor"	evaporation	1.43905477713	2.0	1.80683681061	evaporation
+289	A species that no longer exists. 	extinction	0.541648353067	0.651919101004	0.651919101004	extinction
+290	A species that no longer exists. 	classify	0.240384688692	0.402800084736	0.240384688692	extinction
+291	What is the name of the process by which most cells divide? 	life cycle	0.0711111111111	0.0711111111111	0.0711111111111	mitosis
+292	What is the name of the process by which most cells divide? 	mitosis	7.51516610681e-05	7.51516610681e-05	7.51516610681e-05	mitosis
+293	What is the name of the process by which most cells divide? 	regeneration	1.0	1.0	1.0	mitosis
+294	Glaciers are slow-moving sheets of ice found on land. What process occurs when glacial ice is heated to 5° Celsius? 	freezing	0.649520124068	0.897636849201	0.740457528475	melting
+295	Glaciers are slow-moving sheets of ice found on land. What process occurs when glacial ice is heated to 5° Celsius? 	melting	0.426453731782	1.04655056754	0.257637265726	melting
+296	Glaciers are slow-moving sheets of ice found on land. What process occurs when glacial ice is heated to 5° Celsius? 	precipitation	0.648321164674	0.828995955946	0.828995955946	melting
+297	Glaciers are slow-moving sheets of ice found on land. What process occurs when glacial ice is heated to 5° Celsius? 	evaporation	0.558980598885	0.866418739834	0.541495857839	melting
+298	spoiling food 	physical change	0.205304281678	0.483748524859	0.0347222222222	chemical change
+299	spoiling food 	chemical change	0.307252020799	0.87890625	0.171319877478	chemical change
+300	"The act of saving, protecting or using resources wisely is called <span class=""blank""> </span> "	conservation	0.280843588761	0.882344215899	0.163512055439	conservation
+301	"The act of saving, protecting or using resources wisely is called <span class=""blank""> </span> "	recycling	0.0409657669365	0.0432282158877	0.0402116172861	conservation
+302	"The act of saving, protecting or using resources wisely is called <span class=""blank""> </span> "	innovation	0.00421803535622	0.00490723676242	0.00421803535622	conservation
+303	"The act of saving, protecting or using resources wisely is called <span class=""blank""> </span> "	condensation	0.00145161416314	0.0021347267105	0.00145161416314	conservation
+304	"<span class=""blank""> </span> is the major change in the body form of an animal during its life cycle. "	life cycle	1.00142901776	2.0	1.00018926284	metamorphosis
+305	"<span class=""blank""> </span> is the major change in the body form of an animal during its life cycle. "	metamorphosis	0.608740446927	1.22165715927	0.471907493401	metamorphosis
+306	"If plaque is not cleaned off the teeth, it can cause the enamel of your teeth to <span class=""blank""> </span>. "	harden	0.04	0.04	0.04	decay
+307	"If plaque is not cleaned off the teeth, it can cause the enamel of your teeth to <span class=""blank""> </span>. "	shine	1.96012758746e-09	1.96012758746e-09	1.96012758746e-09	decay
+308	"If plaque is not cleaned off the teeth, it can cause the enamel of your teeth to <span class=""blank""> </span>. "	become whiter	0.0	0.0	0.0	decay
+309	"If plaque is not cleaned off the teeth, it can cause the enamel of your teeth to <span class=""blank""> </span>. "	decay	0.0	0.0	0.0	decay
+310	Terracing a hillside can slow __________________________. 	absorption	0.0	0.0	0.0	erosion
+311	Terracing a hillside can slow __________________________. 	erosion	0.0	0.0	0.0	erosion
+312	Terracing a hillside can slow __________________________. 	weathering	0.0	0.0	0.0	erosion
+313	"When you leave a glass of water standing on the counter, water forms on the outside of the glass. This is an example of <span class=""blank""> </span>. "	condensation	0.889519341406	1.44802332361	0.809887127311	condensation
+314	"When you leave a glass of water standing on the counter, water forms on the outside of the glass. This is an example of <span class=""blank""> </span>. "	evaporation	0.56049030088	1.19316318939	0.544204822566	condensation
+315	Rocks change over time from one type to another.	melting	0.752244131588	1.0	1.0	the rock cycle
+316	Rocks change over time from one type to another.	erosion	0.749313792062	1.41288402125	0.640017894809	the rock cycle
+317	What is it called when two different organisms form a relationship where they are dependent upon each other? 	photosynthesis	0.0161262933384	0.0161263245756	0.0161262855291	symbiosis
+318	What is it called when two different organisms form a relationship where they are dependent upon each other? 	symbiosis	0.540159897448	1.0	0.461750107631	symbiosis
+319	When a planet moves around the sun, this is called a 	rotation	1.1284180753	2.0	0.978113883996	revolution
+320	When a planet moves around the sun, this is called a 	revolution	0.55	1.0	0.4	revolution
+321	When a planet moves around the sun, this is called a 	spin	0.451103991833	0.780891661774	0.374045138889	revolution
+322	Drinking lots of salt water can kill a person. The salt in the water moves to the cells, where there is very little salt. As the cells move the water to balance out the salt - so that the salt is equal on both sides - water moves OUT of the cell, and the cell dies. What causes this to happen? 	diffusion	0.398704912502	1.0	0.264620259979	osmosis
+323	Drinking lots of salt water can kill a person. The salt in the water moves to the cells, where there is very little salt. As the cells move the water to balance out the salt - so that the salt is equal on both sides - water moves OUT of the cell, and the cell dies. What causes this to happen? 	osmosis	0.533041661442	1.0	0.690574812571	osmosis
+324	As water vapor rises in the atmosphere, it cools and changes back to liquid. Tiny drops of liquid form clouds in this process called 	run-off	0.306951867132	1.00173123602	0.0402318035116	condensation
+325	As water vapor rises in the atmosphere, it cools and changes back to liquid. Tiny drops of liquid form clouds in this process called 	condensation	0.973906894999	2.27617425805	1.15556164	condensation
+326	As water vapor rises in the atmosphere, it cools and changes back to liquid. Tiny drops of liquid form clouds in this process called 	precipitation	0.479858525785	1.07228166482	0.286712686157	condensation
+327	As water vapor rises in the atmosphere, it cools and changes back to liquid. Tiny drops of liquid form clouds in this process called 	evaporation	0.696212288463	1.47448483239	0.749537313053	condensation
+328	When we cut down trees or drain wetlands, we do what to the habitats of many living things? 	destroy	0.0	0.0	0.0	destroy
+329	When we cut down trees or drain wetlands, we do what to the habitats of many living things? 	plant	0.00651731170971	0.00651731170971	0.00651731170971	destroy
+330	When we cut down trees or drain wetlands, we do what to the habitats of many living things? 	help	0.00248627548788	0.00248627548788	0.00248627548788	destroy
+331	When we cut down trees or drain wetlands, we do what to the habitats of many living things? 	build	0.0306333102291	0.122010564926	0.000212113893783	destroy
+332	"The force that keeps us on Earth is <span class=""blank""> </span> "	magnetism	0.4669494418	0.765625	0.666666666667	gravity
+333	"The force that keeps us on Earth is <span class=""blank""> </span> "	inertia	0.0	0.0	0.0	gravity
+334	"The force that keeps us on Earth is <span class=""blank""> </span> "	gravity	0.23265291049	0.666666666667	0.127551020408	gravity
+335	When light strikes a surface and bounces off, what occurs? 	reflection	0.880132183112	1.00123748082	1.0	reflection
+336	When light strikes a surface and bounces off, what occurs? 	refraction	1.0	1.0	1.0	reflection
+337	A new carpet pad made from scraps of old carpets is an example of 	repairing	0.0195735052055	0.0195735052055	0.0195735052055	recycling
+338	A new carpet pad made from scraps of old carpets is an example of 	revising	0.0	0.0	0.0	recycling
+339	A new carpet pad made from scraps of old carpets is an example of 	reducing	0.250953679866	0.250953679866	0.250953679866	recycling
+340	A new carpet pad made from scraps of old carpets is an example of 	recycling	0.442144376821	0.442144376821	0.442144376821	recycling
+341	A giraffe's long neck is a(n) 	mimicry	1.0	1.0	1.0	adaptation
+342	A giraffe's long neck is a(n) 	adaptation	0.752645422328	1.0	0.752645422328	adaptation
+343	A giraffe's long neck is a(n) 	camouflage	0.839653807084	1.0	1.0	adaptation
+344	"The process of a liquid becoming a gas is called <span class=""blank""> </span> "	melting	0.873581232303	1.62867366857	0.976754567569	evaporation
+345	"The process of a liquid becoming a gas is called <span class=""blank""> </span> "	boiling	0.467510944703	0.962285778789	0.143955157395	evaporation
+346	"The process of a liquid becoming a gas is called <span class=""blank""> </span> "	evaporation	1.48684084552	2.97675456757	1.36419080252	evaporation
+347	The force that pulls objects to the center of the Earth is called? 	motion	0.0117735085985	0.0351986161448	6.98435010432e-05	gravity
+348	The force that pulls objects to the center of the Earth is called? 	acceleration	0.153919626559	0.187338113809	0.153919626559	gravity
+349	The force that pulls objects to the center of the Earth is called? 	gravity	0.241581240374	0.9309674601	0.0791852949673	gravity
+350	The force that pulls objects to the center of the Earth is called? 	friction	0.211127136367	0.460812712544	0.209686890439	gravity
+351	"During <span class=""blank""> </span>, a light ray changes direction as it passes from one material to another. "	reflection	0.624130537103	1.05625761087	0.716377860979	refraction
+352	"During <span class=""blank""> </span>, a light ray changes direction as it passes from one material to another. "	refraction	0.66647571996	1.0	0.549602195752	refraction
+353	"Light can <span class=""blank""> </span>off surfaces that it strikes. "	motion	0.0196424471993	0.0196424471993	0.0196424471993	reflect
+354	"Light can <span class=""blank""> </span>off surfaces that it strikes. "	reflect	1.0	1.0	1.0	reflect
+355	The process in which something changes from a gas state to a liquid state 	convection	0.105749513582	0.450039589043	0.000410733694533	condensation
+356	The process in which something changes from a gas state to a liquid state 	condensation	1.30734363467	3.0	1.00654746217	condensation
+357	The process in which something changes from a gas state to a liquid state 	forecast	0.322419993358	0.322419993358	0.322419993358	condensation
+358	squeezing oranges to make orange juice 	physical change	0.0470087260889	0.135897950505	0.0264708334631	physical change
+359	squeezing oranges to make orange juice 	chemical change	0.40575095088	1.21282340004	0.205055937097	physical change
+360	If a snake copies another snake it is called 	play	0.0	0.0	0.0	mimicry
+361	If a snake copies another snake it is called 	mimicry	0.182133333333	0.1936	0.1764	mimicry
+362	If a snake copies another snake it is called 	camouflage	0.127391083759	0.184461896517	0.1764	mimicry
+363	A period when an animal goes into a long, deep sleep is called 	hibernation	1.11635926408	2.0	1.0	hibernation
+364	A period when an animal goes into a long, deep sleep is called 	migration	1.0	1.0	1.0	hibernation
+365	A period when an animal goes into a long, deep sleep is called 	camouflage	0.842361111111	1.0	1.0	hibernation
+366	Which would cause liquid water to change to a solid? 	freezing	1.74186372109	3.0	1.97675456757	freezing
+367	Which would cause liquid water to change to a solid? 	heating	0.199933633747	0.601811025878	0.173333333333	freezing
+368	Which would cause liquid water to change to a solid? 	warming	1.2	1.6	1.3	freezing
+369	Which would cause liquid water to change to a solid? 	dripping	0.470144359212	0.470144359212	0.470144359212	freezing
+370	"<span class=""blank""> </span>is the spinning of a planet on its axis. "	rotation	0.731098605034	1.505457634	0.525457633996	rotation
+371	"<span class=""blank""> </span>is the spinning of a planet on its axis. "	revolution	0.0573160086808	0.0625	0.0625	rotation
+372	"<span class=""blank""> </span>is the spinning of a planet on its axis. "	orbit	0.614884637705	1.0	0.814215949684	rotation
+373	"There is one more way to deal with our growing garbage problem. Leaves and grass clippings can be <span class=""blank""> </span>or placed in a pile in the backyard. They will break down into soil and not have to be collected and take up space in our landfills. "	separated	0.0139858292327	0.0139858292327	0.0139858292327	composted
+374	"There is one more way to deal with our growing garbage problem. Leaves and grass clippings can be <span class=""blank""> </span>or placed in a pile in the backyard. They will break down into soil and not have to be collected and take up space in our landfills. "	composted	0.0	0.0	0.0	composted
+375	"There is one more way to deal with our growing garbage problem. Leaves and grass clippings can be <span class=""blank""> </span>or placed in a pile in the backyard. They will break down into soil and not have to be collected and take up space in our landfills. "	processed	0.415067628297	0.829834481811	0.415067628297	composted
+376	"There is one more way to deal with our growing garbage problem. Leaves and grass clippings can be <span class=""blank""> </span>or placed in a pile in the backyard. They will break down into soil and not have to be collected and take up space in our landfills. "	crushed	3.14518001523e-06	3.14518001523e-06	3.14518001523e-06	composted
+377	When two substances are combined, this may occur: 	retract	0.0821722805117	0.0821722805117	0.0821722805117	reaction
+378	When two substances are combined, this may occur: 	reaction	0.0	0.0	0.0	reaction
+379	When two substances are combined, this may occur: 	repel	0.370794155767	0.60539169928	0.438606577114	reaction
+380	The process of moving sediment by wind, moving water, or ice is 	erosion	0.48849022678	1.0	0.4509641412	erosion
+381	The process of moving sediment by wind, moving water, or ice is 	weathering	0.42297068721	1.0	0.323251204158	erosion
+382	To travel from one place to another. 	migrate	0.13364257616	0.214075413223	0.0894013124197	migrate
+383	To travel from one place to another. 	hibernate	0.0033752489172	0.0033752489172	0.0033752489172	migrate
+384	To travel from one place to another. 	camouflage	0.0337300422438	0.0337300422438	0.0337300422438	migrate
+385	"The spinning of a planet around an imaginary line through its center is called <span class=""blank""> </span> "	revolving	0.0573160086808	0.0625	0.0625	rotation
+386	"The spinning of a planet around an imaginary line through its center is called <span class=""blank""> </span> "	rotation	0.731098605034	1.505457634	0.525457633996	rotation
+387	"The spinning of a planet around an imaginary line through its center is called <span class=""blank""> </span> "	gravity	0.248450987609	0.281665092338	0.248450987609	rotation
+388	"During <span class=""blank""> </span>, autotrophs use light energy to convert carbon dioxide and water into oxygen and energy-rich carbohydrates such as sugars and starches. "	chemosynthesis	0.766378242846	1.140625	0.895695876619	photosynthesis
+389	"During <span class=""blank""> </span>, autotrophs use light energy to convert carbon dioxide and water into oxygen and energy-rich carbohydrates such as sugars and starches. "	evaporation	0.305323270343	1.15669554061	0.0420309683086	photosynthesis
+390	"During <span class=""blank""> </span>, autotrophs use light energy to convert carbon dioxide and water into oxygen and energy-rich carbohydrates such as sugars and starches. "	photosynthesis	1.1248131256	2.0	1.0	photosynthesis
+391	"During <span class=""blank""> </span>, autotrophs use light energy to convert carbon dioxide and water into oxygen and energy-rich carbohydrates such as sugars and starches. "	nitrogen fixation	0.562282680887	1.0	0.562282680887	photosynthesis
+392	"<span class=""blank""> </span> refers to the movement of Earth around the sun. "	rotation	1.20942837521	1.40816326531	1.15081534546	revolution
+393	"<span class=""blank""> </span> refers to the movement of Earth around the sun. "	revolution	1.0	1.0	1.0	revolution
+394	"<span class=""blank""> </span> refers to the movement of Earth around the sun. "	precipitation	0.0189872685185	0.0277777777778	0.0277777777778	revolution
+395	Bees help flowers reproduces through a process called 	phototropism	0.106095504558	0.145124716553	0.145124716553	pollination
+396	Bees help flowers reproduces through a process called 	fertilization	0.428294929265	1.0	0.284027500253	pollination
+397	Bees help flowers reproduces through a process called 	pollination	0.372913972751	1.05628174135	0.145124716553	pollination
+398	Bees help flowers reproduces through a process called 	transpiration	0.145124716553	0.145124716553	0.145124716553	pollination
+399	What do you call movements from one location to another? 	hibernation	0.0	0.0	0.0	migration
+400	What do you call movements from one location to another? 	migration	0.924583987441	1.0	1.0	migration
+401	A change in an object's position is called: 	motion	0.516497112643	1.0	0.523106529973	motion
+402	A change in an object's position is called: 	pulling	0.0520448375428	0.0866469136674	0.0866469136674	motion
+403	An adaptation in which an animal looks very much like another animal or an object is a _____________. 	mimicry	0.691057803329	1.03960299927	1.0	mimicry
+404	An adaptation in which an animal looks very much like another animal or an object is a _____________. 	camouflage	0.968359332172	2.0	1.0	mimicry
+405	Is burning a chemical change or physical change? 	physical change	0.0147543398858	0.0255952380952	0.0120441153334	chemical change
+406	Is burning a chemical change or physical change? 	chemical change	0.0155479278854	0.0255952380952	0.0155479278854	chemical change
+407	The process of change from an egg to an adult butterfly is an example of: 	vibrations	0.129273678119	0.189035916824	0.189035916824	metamorphosis
+408	The process of change from an egg to an adult butterfly is an example of: 	metamorphosis	0.490594977114	0.550185607844	0.490594977114	metamorphosis

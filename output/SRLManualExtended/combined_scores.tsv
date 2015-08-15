@@ -1,0 +1,118 @@
+	QUESTION	ANSWER_CHOICE	MEAN_SCORE	MAX_SCORE	MEDIAN_SCORE	CORRECT_ANSWER
+0	"To move in a circle around an object is to <span class=""blank""> </span>"	revolve	1.726010457	1.726010457	1.726010457	revolve
+1	"To move in a circle around an object is to <span class=""blank""> </span>"	rotate	0.500043374169	0.500043374169	0.500043374169	revolve
+2	"To move in a circle around an object is to <span class=""blank""> </span>"	eclipse	0.0	0.0	0.0	revolve
+3	How does your body acquire the oxygen the cells in your body need to function? 	absorption	0.0	0.0	0.0	breathing
+4	How does your body acquire the oxygen the cells in your body need to function? 	breathing	0.0	0.0	0.0	breathing
+5	How does your body acquire the oxygen the cells in your body need to function? 	osmosis	0.0	0.0	0.0	breathing
+6	The process of planting different crops on the same land in different years to help in adding nutrients back in the soil 	terracing	0.000467494521549	0.000467494521549	0.000467494521549	crop rotation
+7	The process of planting different crops on the same land in different years to help in adding nutrients back in the soil 	contour plowing	1.0	1.0	1.0	crop rotation
+8	The process of planting different crops on the same land in different years to help in adding nutrients back in the soil 	crop rotation	0.0	0.0	0.0	crop rotation
+9	The process of planting different crops on the same land in different years to help in adding nutrients back in the soil 	fertilization	0.00125592930352	0.00125592930352	0.00125592930352	crop rotation
+10	"The force that keeps us on Earth is <span class=""blank""> </span> "	magnetism	0.765625	0.765625	0.765625	gravity
+11	"The force that keeps us on Earth is <span class=""blank""> </span> "	inertia	0.0	0.0	0.0	gravity
+12	"The force that keeps us on Earth is <span class=""blank""> </span> "	gravity	0.420787088192	0.420787088192	0.420787088192	gravity
+13	When plants use stored sugar for energy, they go through a process called 	perspiration	0.0	0.0	0.0	respiration
+14	When plants use stored sugar for energy, they go through a process called 	photosynthesis	1.0	1.0	1.0	respiration
+15	When plants use stored sugar for energy, they go through a process called 	respiration	2.01600222974	2.01600222974	2.01600222974	respiration
+16	When plants use stored sugar for energy, they go through a process called 	transpiration	1.00000814598	1.00000814598	1.00000814598	respiration
+17	What is the name of the process by which most cells divide?	life cycle	0.0	0.0	0.0	mitosis
+18	What is the name of the process by which most cells divide?	mitosis	2.0	2.0	2.0	mitosis
+19	What is the name of the process by which most cells divide?	regeneration	0.0	0.0	0.0	mitosis
+20	What starts the change from an igneous rock to a sedimentary rock? 	melting	1.51552369719	1.51552369719	1.51552369719	weathering
+21	What starts the change from an igneous rock to a sedimentary rock? 	weathering	1.83686949726	1.83686949726	1.83686949726	weathering
+22	A giraffe's long neck is a(n) 	mimicry	1.0	1.0	1.0	adaptation
+23	A giraffe's long neck is a(n) 	adaptation	0.343320276178	0.343320276178	0.343320276178	adaptation
+24	A giraffe's long neck is a(n) 	camouflage	0.546398013342	0.546398013342	0.546398013342	adaptation
+25	The continuous movement of nitrogen between air, soil, plants and animals.	carbon cycle	0.547817141094	0.547817141094	0.547817141094	nitrogen cycle
+26	The continuous movement of nitrogen between air, soil, plants and animals.	nitrogen cycle	1.0	1.0	1.0	nitrogen cycle
+27	Rocks change over time from one type to another.	the rock cycle	2.0	2.0	2.0	the rock cycle
+28	Rocks change over time from one type to another.	erosion	1.22222222222	1.22222222222	1.22222222222	the rock cycle
+29	Rocks change over time from one type to another.	melting	1.00990031792	1.00990031792	1.00990031792	the rock cycle
+30	"<span class=""blank""> </span> is a process in the water cycle, where water vapor rises into the atmosphere."	transpiration	1.3556672203	1.3556672203	1.3556672203	evaporation
+31	"<span class=""blank""> </span> is a process in the water cycle, where water vapor rises into the atmosphere."	condensation	0.469800006595	0.469800006595	0.469800006595	evaporation
+32	"<span class=""blank""> </span> is a process in the water cycle, where water vapor rises into the atmosphere."	precipitation	0.0	0.0	0.0	evaporation
+33	"<span class=""blank""> </span> is a process in the water cycle, where water vapor rises into the atmosphere."	evaporation	1.27561434586	1.27561434586	1.27561434586	evaporation
+34	Andy is cooking a piece of ham in a pan. 	conduction	0.0	0.0	0.0	conduction
+35	Andy is cooking a piece of ham in a pan. 	friction	0.0	0.0	0.0	conduction
+36	When light strikes a surface and bounces off, what occurs?	refraction	1.45687288591	1.45687288591	1.45687288591	reflection
+37	What process produces sex cells?	mitosis	0.510980659482	0.510980659482	0.510980659482	meiosis
+38	What process produces sex cells?	splitting	0.0	0.0	0.0	meiosis
+39	What process produces sex cells?	meiosis	1.0	1.0	1.0	meiosis
+40	"The process in which a snake loses its outer skin is called <span class=""blank""> </span>. "	shedding	0.54944785576	0.54944785576	0.54944785576	molting
+41	"The process in which a snake loses its outer skin is called <span class=""blank""> </span>. "	loosening	0.0	0.0	0.0	molting
+42	"The process in which a snake loses its outer skin is called <span class=""blank""> </span>. "	molting	1.59849782066	1.59849782066	1.59849782066	molting
+43	When you rub your hands together very quickly, it produces heat and is called 	gravity	0.0331206728529	0.0331206728529	0.0331206728529	friction
+44	When you rub your hands together very quickly, it produces heat and is called 	friction	2.0	2.0	2.0	friction
+45	A pot is heated on a stove. Which process causes the metal handle of the pot to also become hot? 	conduction	0.000572000129188	0.000572000129188	0.000572000129188	conduction
+46	A pot is heated on a stove. Which process causes the metal handle of the pot to also become hot? 	convection	0.0	0.0	0.0	conduction
+47	A pot is heated on a stove. Which process causes the metal handle of the pot to also become hot? 	combustion	0.0414009374243	0.0414009374243	0.0414009374243	conduction
+48	A pot is heated on a stove. Which process causes the metal handle of the pot to also become hot? 	radiation	0.0	0.0	0.0	conduction
+49	"Teeth help us to <span class=""blank""> </span>. "	swim	0.0	0.0	0.0	talk
+50	"Teeth help us to <span class=""blank""> </span>. "	write	0.0	0.0	0.0	talk
+51	"Teeth help us to <span class=""blank""> </span>. "	talk	1.0	1.0	1.0	talk
+52	"There is one more way to deal with our growing garbage problem. Leaves and grass clippings can be <span class=""blank""> </span>or placed in a pile in the backyard. They will break down into soil and not have to be collected and take up space in our landfills. "	separated	0.0699184297241	0.0699184297241	0.0699184297241	composted
+53	"There is one more way to deal with our growing garbage problem. Leaves and grass clippings can be <span class=""blank""> </span>or placed in a pile in the backyard. They will break down into soil and not have to be collected and take up space in our landfills. "	composted	0.264227108968	0.264227108968	0.264227108968	composted
+54	"There is one more way to deal with our growing garbage problem. Leaves and grass clippings can be <span class=""blank""> </span>or placed in a pile in the backyard. They will break down into soil and not have to be collected and take up space in our landfills. "	processed	0.0	0.0	0.0	composted
+55	"There is one more way to deal with our growing garbage problem. Leaves and grass clippings can be <span class=""blank""> </span>or placed in a pile in the backyard. They will break down into soil and not have to be collected and take up space in our landfills. "	crushed	0.0	0.0	0.0	composted
+56	Which of the following must all plant and animal species do in order for each species to survive?	migrate	0.331209798951	0.331209798951	0.331209798951	reproduce
+57	Which of the following must all plant and animal species do in order for each species to survive?	reproduce	1.59103043862	1.59103043862	1.59103043862	reproduce
+58	Which of the following must all plant and animal species do in order for each species to survive?	make food	1.0	1.0	1.0	reproduce
+59	What is it called when an object is moved from one position to another? 	work	1.15075216129	1.15075216129	1.15075216129	work
+60	What is it called when an object is moved from one position to another? 	gravity	1.15075216129	1.15075216129	1.15075216129	work
+61	The process that forms reproductive cells is called?	mitosis	0.423869449189	0.423869449189	0.423869449189	meiosis
+62	The process that forms reproductive cells is called?	meiosis	1.0	1.0	1.0	meiosis
+63	What process ends with a new and improved plant? 	germinating	0.22492554289	0.22492554289	0.22492554289	grafting
+64	What process ends with a new and improved plant? 	photosynthesis	0.178784760585	0.178784760585	0.178784760585	grafting
+65	What process ends with a new and improved plant? 	grafting	0.0	0.0	0.0	grafting
+66	Glaciers are slow-moving sheets of ice found on land. What process occurs when glacial ice is heated to 5Â° Celsius?	freezing	0.657577588637	0.657577588637	0.657577588637	melting
+67	Glaciers are slow-moving sheets of ice found on land. What process occurs when glacial ice is heated to 5Â° Celsius?	melting	1.06667220712	1.06667220712	1.06667220712	melting
+68	Glaciers are slow-moving sheets of ice found on land. What process occurs when glacial ice is heated to 5Â° Celsius?	precipitation	0.225573801098	0.225573801098	0.225573801098	melting
+69	Glaciers are slow-moving sheets of ice found on land. What process occurs when glacial ice is heated to 5Â° Celsius?	evaporation	0.239992036657	0.239992036657	0.239992036657	melting
+70	What causes sunflowers to bend toward the sunlight?	negative tropism	0.492851529834	0.492851529834	0.492851529834	positive tropism
+71	What causes sunflowers to bend toward the sunlight?	transportation	0.0234277384423	0.0234277384423	0.0234277384423	positive tropism
+72	What causes sunflowers to bend toward the sunlight?	positive tropism	1.62082984865	1.62082984865	1.62082984865	positive tropism
+73	What causes sunflowers to bend toward the sunlight?	pollination	0.393754786303	0.393754786303	0.393754786303	positive tropism
+74	The process of cutting into a hillside to slow the speed of water flowing down a slope 	terracing	2.42035352112	2.42035352112	2.42035352112	terracing
+75	The process of cutting into a hillside to slow the speed of water flowing down a slope 	contour plowing	0.428772662641	0.428772662641	0.428772662641	terracing
+76	The process of cutting into a hillside to slow the speed of water flowing down a slope 	windbreaking	0.0738269118017	0.0738269118017	0.0738269118017	terracing
+77	The process of cutting into a hillside to slow the speed of water flowing down a slope 	fertilization	0.151383035211	0.151383035211	0.151383035211	terracing
+78	The process of planting grasses between rows of other crops to prevent soil from being washed or blown away 	strip farming	0.00510204081633	0.00510204081633	0.00510204081633	strip farming
+79	The process of planting grasses between rows of other crops to prevent soil from being washed or blown away 	contour plowing	0.378226370147	0.378226370147	0.378226370147	strip farming
+80	The process of planting grasses between rows of other crops to prevent soil from being washed or blown away 	fertilization	0.148128162165	0.148128162165	0.148128162165	strip farming
+81	The process of planting grasses between rows of other crops to prevent soil from being washed or blown away 	crop rotation	0.0984397631841	0.0984397631841	0.0984397631841	strip farming
+82	The process of adding fertilizer to soil to replace nutrients used up by previous crops 	terracing	0.000702893771417	0.000702893771417	0.000702893771417	fertilization
+83	The process of adding fertilizer to soil to replace nutrients used up by previous crops 	strip farming	0.0	0.0	0.0	fertilization
+84	The process of adding fertilizer to soil to replace nutrients used up by previous crops 	crop rotation	0.23422121261	0.23422121261	0.23422121261	fertilization
+85	The process of adding fertilizer to soil to replace nutrients used up by previous crops 	fertilization	1.55574525114	1.55574525114	1.55574525114	fertilization
+86	"Precipitation that falls in form of balls of ice is called <span class=""blank""> </span>. "	hail	0.787963887238	0.787963887238	0.787963887238	hail
+87	"Precipitation that falls in form of balls of ice is called <span class=""blank""> </span>. "	rain	0.155188246097	0.155188246097	0.155188246097	hail
+88	"Precipitation that falls in form of balls of ice is called <span class=""blank""> </span>. "	snow	1.40176849511	1.40176849511	1.40176849511	hail
+89	"If plaque is not cleaned off the teeth, it can cause the enamel of your teeth to <span class=""blank""> </span>. "	harden	0.0	0.0	0.0	decay
+90	"If plaque is not cleaned off the teeth, it can cause the enamel of your teeth to <span class=""blank""> </span>. "	shine	0.0	0.0	0.0	decay
+91	"If plaque is not cleaned off the teeth, it can cause the enamel of your teeth to <span class=""blank""> </span>. "	become whiter	0.0	0.0	0.0	decay
+92	"If plaque is not cleaned off the teeth, it can cause the enamel of your teeth to <span class=""blank""> </span>. "	decay	0.0	0.0	0.0	decay
+93	Bees help flowers reproduces through a process called 	phototropism	0.0755485463212	0.0755485463212	0.0755485463212	pollination
+94	Bees help flowers reproduces through a process called 	fertilization	0.130442342855	0.130442342855	0.130442342855	pollination
+95	Bees help flowers reproduces through a process called 	pollination	0.0571435517537	0.0571435517537	0.0571435517537	pollination
+96	Bees help flowers reproduces through a process called 	transpiration	0.145124716553	0.145124716553	0.145124716553	pollination
+97	Students want to find out at which temperature bean plants grow tallest. Which science process skill would be used to find this temperature? 	measuring	1.00056967899	1.00056967899	1.00056967899	measuring
+98	Students want to find out at which temperature bean plants grow tallest. Which science process skill would be used to find this temperature? 	classifying	0.0	0.0	0.0	measuring
+99	Students want to find out at which temperature bean plants grow tallest. Which science process skill would be used to find this temperature? 	predicting	3.8303976414e-05	3.8303976414e-05	3.8303976414e-05	measuring
+100	Students want to find out at which temperature bean plants grow tallest. Which science process skill would be used to find this temperature? 	inferring	0.000695032113578	0.000695032113578	0.000695032113578	measuring
+101	If a fire destroys a forest, new plants will grow. 	conservation	1.0	1.0	1.0	succession
+102	If a fire destroys a forest, new plants will grow. 	erosion	0.000359192372773	0.000359192372773	0.000359192372773	succession
+103	If a fire destroys a forest, new plants will grow. 	succession	0.000559110760307	0.000559110760307	0.000559110760307	succession
+104	"Babies will <span class=""blank""> </span> or get traits from their parents. "	reproduce	3.20495464451e-09	3.20495464451e-09	3.20495464451e-09	inherit
+105	"Babies will <span class=""blank""> </span> or get traits from their parents. "	survive	0.0	0.0	0.0	inherit
+106	"Babies will <span class=""blank""> </span> or get traits from their parents. "	inherit	2.27086661871	2.27086661871	2.27086661871	inherit
+107	Terracing a hillside can slow __________________________. 	absorption	0.0	0.0	0.0	erosion
+108	Terracing a hillside can slow __________________________. 	soil formation	0.0	0.0	0.0	erosion
+109	Terracing a hillside can slow __________________________. 	erosion	0.0	0.0	0.0	erosion
+110	Terracing a hillside can slow __________________________. 	weathering	0.0	0.0	0.0	erosion
+111	An adaptation in which an animal looks very much like another animal or an object is a _____________. 	mimicry	1.15450593646	1.15450593646	1.15450593646	mimicry
+112	An adaptation in which an animal looks very much like another animal or an object is a _____________. 	camouflage	1.00860683256	1.00860683256	1.00860683256	mimicry
+113	When we cut down trees or drain wetlands, we do what to the habitats of many living things? 	destroy	1.52587890625e-05	1.52587890625e-05	1.52587890625e-05	destroy
+114	When we cut down trees or drain wetlands, we do what to the habitats of many living things? 	plant	0.191401797923	0.191401797923	0.191401797923	destroy
+115	When we cut down trees or drain wetlands, we do what to the habitats of many living things? 	help	0.302355371901	0.302355371901	0.302355371901	destroy
+116	When we cut down trees or drain wetlands, we do what to the habitats of many living things? 	build	0.0006103515625	0.0006103515625	0.0006103515625	destroy
