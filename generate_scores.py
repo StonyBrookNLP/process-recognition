@@ -174,44 +174,97 @@ def get_role_directional_score(question_frame, answer_frame, experiment):
     for frame_element in config.ROLES[experiment]:
         q_element = question_frame[frame_element]
         a_element = answer_frame[frame_element]
-        if pd.isnull(q_element) or pd.isnull(a_element):
-            score = np.NaN
-        else:
-            ret = entailment.get_ai2_textual_entailment(
-                utils.remove_filter_words(a_element),
-                utils.remove_filter_words(q_element))
-            a_scores = map(lambda x: x['score'], ret['alignments'])
-            if len(a_scores):
-                mean_a_score = np.mean(a_scores)
+        if config.ENTAILMENT_TYPE == 'BEST_TEXT_SPAN':
+            if pd.notnull(q_element):
+                q_spans = q_element.split(" | ")
             else:
-                mean_a_score = 0
+                q_spans = [pd.NaT]
+            if pd.notnull(a_element):
+                a_spans = a_element.split(" | ")
+            else:
+                a_spans = [pd.NaT]
 
-            confidence = ret['confidence'] if ret['confidence'] else 0
-            score1 = mean_a_score * confidence
-            ret = entailment.get_ai2_textual_entailment(
-                utils.remove_filter_words(q_element),
-                utils.remove_filter_words(a_element))
-            a_scores = map(lambda x: x['score'], ret['alignments'])
-            if len(a_scores):
-                mean_a_score = np.mean(a_scores)
-            else:
-                mean_a_score = 0
+            all_combinations = itertools.product(q_spans, a_spans)
+            best_combination = (None, None, 0)
+            for q_span, a_span in all_combinations:
+                if pd.isnull(q_span) or pd.isnull(a_span):
+                    score = np.NaN
+                    best_combination = (q_span, a_span, score)
+                else:
+                    ret = entailment.get_ai2_textual_entailment(
+                        utils.remove_filter_words(a_span),
+                        utils.remove_filter_words(q_span))
+                    a_scores = map(lambda x: x['score'], ret['alignments'])
+                    if len(a_scores):
+                        mean_a_score = np.mean(a_scores)
+                    else:
+                        mean_a_score = 0
 
-            confidence = ret['confidence'] if ret['confidence'] else 0
-            score2 = mean_a_score * confidence
-            score = max(score1, score2)
-        if pd.notnull(q_element) and pd.notnull(q_element):
-            if q_element in ["process", "processes"]:
-                frame_scores[frame_element] = ("", a_element, np.NaN)
+                    confidence = ret['confidence'] if ret['confidence'] else 0
+                    score1 = mean_a_score * confidence
+
+                    ret = entailment.get_ai2_textual_entailment(
+                        utils.remove_filter_words(q_span),
+                        utils.remove_filter_words(a_span))
+                    a_scores = map(lambda x: x['score'], ret['alignments'])
+                    if len(a_scores):
+                        mean_a_score = np.mean(a_scores)
+                    else:
+                        mean_a_score = 0
+
+                    confidence = ret['confidence'] if ret['confidence'] else 0
+                    score2 = mean_a_score * confidence
+                    score = max(score1, score2)
+                    if score > best_combination[2]:
+                        best_combination = (q_span, a_span, score)
+            if pd.notnull(best_combination[0]) and pd.notnull(best_combination[1]):
+                frame_scores[frame_element] = best_combination
+            elif pd.notnull(best_combination[0]):
+                frame_scores[frame_element] = (best_combination[0], "", best_combination[2])
+            elif pd.notnull(best_combination[1]):
+                frame_scores[frame_element] = ("", best_combination[1], best_combination[2])
             else:
-                frame_scores[frame_element] = (q_element, a_element, score)
-        elif pd.notnull(q_element):
-            frame_scores[frame_element] = (q_element, "", score)
-        elif pd.notnull(a_element):
-            frame_scores[frame_element] = ("", a_element, score)
+                frame_scores[frame_element] = ("", "", np.NaN)
+
         else:
-            frame_scores[frame_element] = ("", "", np.NaN)
-            #     frame_scores[utils.DEFINITION] = answer_frame[utils.DEFINITION]
+            if pd.isnull(q_element) or pd.isnull(a_element):
+                score = np.NaN
+            else:
+                ret = entailment.get_ai2_textual_entailment(
+                    utils.remove_filter_words(a_element),
+                    utils.remove_filter_words(q_element))
+                a_scores = map(lambda x: x['score'], ret['alignments'])
+                if len(a_scores):
+                    mean_a_score = np.mean(a_scores)
+                else:
+                    mean_a_score = 0
+
+                confidence = ret['confidence'] if ret['confidence'] else 0
+                score1 = mean_a_score * confidence
+                ret = entailment.get_ai2_textual_entailment(
+                    utils.remove_filter_words(q_element),
+                    utils.remove_filter_words(a_element))
+                a_scores = map(lambda x: x['score'], ret['alignments'])
+                if len(a_scores):
+                    mean_a_score = np.mean(a_scores)
+                else:
+                    mean_a_score = 0
+
+                confidence = ret['confidence'] if ret['confidence'] else 0
+                score2 = mean_a_score * confidence
+                score = max(score1, score2)
+            if pd.notnull(q_element) and pd.notnull(a_element):
+                if q_element in ["process", "processes"]:
+                    frame_scores[frame_element] = ("", a_element, np.NaN)
+                else:
+                    frame_scores[frame_element] = (q_element, a_element, score)
+            elif pd.notnull(q_element):
+                frame_scores[frame_element] = (q_element, "", score)
+            elif pd.notnull(a_element):
+                frame_scores[frame_element] = ("", a_element, score)
+            else:
+                frame_scores[frame_element] = ("", "", np.NaN)
+                #     frame_scores[utils.DEFINITION] = answer_frame[utils.DEFINITION]
     return frame_scores
 
 

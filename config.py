@@ -2,7 +2,7 @@ __author__ = 'chetannaik'
 
 
 # EXPERIMENTS = ["SRLManual", "SRLQA", "SRLQADSv1", "SRLQADSv2", "SRLQADSv2Top5", "MATE_AutoTrigger", "MATE_ManualTrigger", "SRLManualExtended"]
-EXPERIMENTS = ["SRLManual"]
+EXPERIMENTS = ["SRLManualExtended"]
 
 SHARDS = {"SRLManual": 1,
           "SRLManualExtended": 1,
@@ -19,6 +19,9 @@ SCORE_TYPE = "ROW_SCORE"
 # SCORE_DIRECTION_ABSTRACTION = ["FRAME", "ROLE"]
 SCORE_DIRECTION_ABSTRACTION = "ROLE"
 
+# ENTAILMENT_TYPE = ["BOW", "BEST_TEXT_SPAN"]
+ENTAILMENT_TYPE = "BEST_TEXT_SPAN"
+
 GROUP_WEIGHTS = {5: 1, 4: 0.8, 3: 0.24, 2: 0.072, 1: 0.0216, 0: 0}
 
 SCORES = []
@@ -26,7 +29,7 @@ SCORES = []
 BASIC_ROLES = ['UNDERGOER', 'ENABLER', 'TRIGGER', 'RESULT']
 
 EXTENDED_ROLES = ['UNDERGOER', 'ENABLER', 'TRIGGER', 'THEME', 'RESULT',
-                  'MEDIUM', 'SOURCE', 'TARGET', 'LOCATION', 'DIRECTION']
+                  'SOURCE', 'TARGET', 'LOCATION', 'DIRECTION']
 
 ROLES = {"SRLManual": BASIC_ROLES,
          "SRLManualExtended": EXTENDED_ROLES,

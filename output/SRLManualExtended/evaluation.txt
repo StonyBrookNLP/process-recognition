@@ -1,11 +1,11 @@
 RESULTS:
 
-Total number of questions: 37
+Total number of questions: 43
 
-num answered (mean)  : 22
-num answered (max)   : 22
-num answered (median): 22
+num answered (mean)  : 29
+num answered (max)   : 29
+num answered (median): 29
 
-% answered (mean)  : 59.46
-% answered (max)   : 59.46
-% answered (median): 59.46
+% answered (mean)  : 67.44
+% answered (max)   : 67.44
+% answered (median): 67.44
